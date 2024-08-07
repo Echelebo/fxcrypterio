@@ -179,8 +179,8 @@
                                 class="menu-left-block" href="/"><img alt="logo" fetchpriority="high"
                                     width="1800" height="1600" decoding="async" data-nimg="1"
                                     class="w-[149px] max-sm:w-[128px]" style="color:transparent"
-                                    srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2FLogoWhite.png&amp;w=1920&amp;q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2FLogoWhite.png&amp;w=3840&amp;q=75 2x"
-                                    src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2FLogoWhite.png&amp;w=3840&amp;q=75"></a>
+                                    srcset="/finatex-next.vercel.app/_next/LogoWhite.png, /finatex-next.vercel.app/_next/LogoWhite.png"
+                                    src="/finatex-next.vercel.app/_next/LogoWhite.png"></a>
                             <div class="menu-center-block h-full">
                                 <ul class="menu-nav flex items-center xl:gap-2 h-full">
                                     <li
