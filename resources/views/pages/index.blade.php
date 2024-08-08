@@ -1,3 +1,15 @@
+@php
+    use App\Models\Bot;
+    use Faker\Factory as Faker;
+
+    $page_title = 'Home';
+    $faker = Faker::create();
+
+    $bots = Bot::get();
+
+    $short_description = site('seo_description');
+
+@endphp
 @extends('layouts.front')
 
 
@@ -1234,4 +1246,217 @@
             </div>
         </div>
     </main>
+@endsection
+@section('scripts')
+    {{-- spining image --}}
+
+    <script>
+        const circle = document.querySelector('.circle');
+        const images = document.querySelectorAll('.floating-image');
+        const numImages = images.length;
+        const deviceWidth = window.innerWidth;
+
+        let radius;
+        if (deviceWidth > 766) {
+            radius = Math.min(circle.clientWidth / 2, circle.clientHeight / 2) - 25;
+        } else {
+            radius = deviceWidth; // Use a specific value for small deviceWidth
+        }
+
+        function moveImageInCircleAndSpin(img, centerX, centerY, angle) {
+            const x = centerX + radius * Math.cos(angle);
+            const y = centerY + radius * Math.sin(angle);
+            const rotation = angle * (180 / Math.PI);
+
+            img.style.left = `${x}px`;
+            img.style.top = `${y}px`;
+            img.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+
+            const newAngle = angle + 0.01; // Adjust the rotation speed here
+            const randomDelay = Math.random() * 10; // Small delay to adjust rotation phase
+            setTimeout(() => {
+                moveImageInCircleAndSpin(img, centerX, centerY, newAngle);
+            }, randomDelay);
+        }
+
+        function initializeImagePositions() {
+            const centerX = circle.clientWidth / 2;
+            const centerY = circle.clientHeight / 2;
+
+            images.forEach((img, index) => {
+                const angle = (index / numImages) * 2 * Math.PI;
+                moveImageInCircleAndSpin(img, centerX, centerY, angle);
+            });
+        }
+
+        initializeImagePositions();
+    </script>
+
+
+    {{-- moving image --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.looping-image').owlCarousel({
+                loop: true,
+                margin: 5,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplaySpeed: 600,
+                dots: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 5,
+                    },
+                    600: {
+                        items: 10,
+                    },
+                    1000: {
+                        items: 10,
+                    }
+                }
+            });
+
+            $('.reviews').owlCarousel({
+                loop: true,
+                margin: 5,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplaySpeed: 600,
+                dots: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    }
+                }
+            });
+
+            $('.deposits').owlCarousel({
+                loop: true,
+                margin: 5,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplaySpeed: 600,
+                dots: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 3,
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    {{-- globe --}}
+    <script src="//unpkg.com/globe.gl"></script>
+    <script>
+        fetch("{{ route('places') }}").then(res => res.json()).then(places => {
+
+            const globeInstance = Globe()
+                .globeImageUrl("{{ asset('/asset/images/earth-night.jpg') }}")
+                .backgroundImageUrl("{{ asset('/asset/images/ts-gray-1.png') }}")
+                .labelsData(places.features)
+                .labelLat(d => d.properties.latitude)
+                .labelLng(d => d.properties.longitude)
+                .labelText(d => d.properties.name)
+                .labelSize(d => Math.sqrt(d.properties.pop_max) * 4e-4)
+                .labelDotRadius(d => Math.sqrt(d.properties.pop_max) * 4e-4)
+                .labelColor(() => 'rgba(255, 165, 0, 0.75)')
+                .labelResolution(2)
+
+            (document.getElementById('globeViz'))
+
+
+        });
+    </script>
+
+    {{-- schuffle recent trades --}}
+    <script>
+        function updateTradeTimes() {
+            const tradeTimeElements = document.querySelectorAll('.recent_trade_time');
+            const currentTime = new Date().toLocaleTimeString();
+
+            tradeTimeElements.forEach((element) => {
+                element.textContent = currentTime;
+            });
+        }
+
+        function shuffleAndDisplayRecentTrades() {
+            const tradesDiv = document.getElementById('recentTrades');
+            const trades = Array.from(tradesDiv.children);
+
+            trades.sort(() => Math.random() - 0.5); // Shuffle the array
+
+            // Remove the existing trade divs
+            while (tradesDiv.firstChild) {
+                tradesDiv.removeChild(tradesDiv.firstChild);
+            }
+
+            // Append the first 10 shuffled trade divs back to the container
+            for (let i = 0; i < 20 && i < trades.length; i++) {
+                tradesDiv.appendChild(trades[i]);
+            }
+
+            updateTradeTimes(); // Update trade times after shuffling
+        }
+
+        // Initial shuffle and display
+        shuffleAndDisplayRecentTrades();
+
+        // Set interval to shuffle and update times every second (1000 milliseconds)
+        setInterval(shuffleAndDisplayRecentTrades, 1000);
+
+        // update every 5 minutes
+        function updateRecentTrades() {
+            // Use jQuery to make an AJAX request to the server
+            $.ajax({
+                url: window.location.href,
+                method: 'GET',
+                dataType: 'html',
+                success: function(response) {
+                    // Update the content of the recentTradesContainer div
+                    var targetDiv = '#recentTradesContainer';
+                    $(targetDiv).html($(response).find(targetDiv).html());
+                    updateTradeTimes();
+                    $('#deposits').html($(response).find('#deposits').html());
+
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error fetching data:', error);
+                }
+            });
+        }
+
+        setInterval(updateRecentTrades, 10000);
+    </script>
+
+    {{-- apply bot class --}}
+    <script>
+        const divElement = document.getElementById('hows-bot');
+        const classes = ['hows-bot-orange', 'hows-bot-green', 'hows-bot-blue', 'hows-bot-purple'];
+        let currentIndex = 0;
+
+        function applyNextClass() {
+            divElement.className = classes[currentIndex];
+            currentIndex = (currentIndex + 1) % classes.length;
+        }
+
+        setInterval(applyNextClass, 5000);
+    </script>
 @endsection

@@ -1,3 +1,10 @@
+@php
+
+    $page_title = 'Contact Us';
+    $short_description = 'We are available 24/7. You can reach us via any of the means below.';
+
+@endphp
+
 {{-- layout --}}
 @extends('layouts.front')
 

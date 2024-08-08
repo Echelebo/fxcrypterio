@@ -1,3 +1,16 @@
+@php
+
+    use App\Models\DepositCoin;
+
+    $logos = DepositCoin::inRandomOrder()->take(20)->get('logo_url');
+
+    $page_title = 'Our services ' . site('name');
+    $short_description =
+        site('name') .
+        ' uses advanced protocol trained on extensive trading data and algorithms to analyze market trends and execute profitable trades with high precision.';
+
+@endphp
+
 {{-- layout --}}
 @extends('layouts.front')
 

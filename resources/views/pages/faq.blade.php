@@ -1,3 +1,10 @@
+@php
+
+    $page_title = 'FAQs';
+    $short_description = 'Below are some frequently asked questions from our users';
+
+@endphp
+
 {{-- layout --}}
 @extends('layouts.front')
 
