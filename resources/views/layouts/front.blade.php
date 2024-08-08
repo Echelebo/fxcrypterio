@@ -280,7 +280,7 @@
                             </li>
                             <li class="nav-item text-white h-full flex items-center justify-center "><a
                                     class="nav-link text-title flex items-center gap-1"
-                                    href="{{ route('faq') }}"><span>FAQs</span></a>
+                                    href="{{ route('faqs') }}"><span>FAQs</span></a>
 
                             </li>
 
@@ -344,7 +344,7 @@
                         </li>
                         <li class="nav-item-mobile h-full flex-column gap-2 pt-4 pb-2 pl-3 pr-3 pointer pages ">
                             <a class="nav-link-mobile flex items-center justify-between"
-                                href="{{ route('faq') }}"><span class="body2 font-semibold">FAQs </span></a>
+                                href="{{ route('faqs') }}"><span class="body2 font-semibold">FAQs </span></a>
 
                         </li>
 
@@ -420,7 +420,7 @@
                                     <ul class="list-nav mt-1">
                                         <li class="mt-3"><a
                                                 class="caption1 has-line-before line-white text-surface hover-underline"
-                                                href="{{ route('faq') }}">FAQs</a></li>
+                                                href="{{ route('faqs') }}">FAQs</a></li>
                                         <li class="mt-3"><a
                                                 class="caption1 has-line-before line-white text-surface hover-underline"
                                                 href="{{ route('user.register') }}">Get Started</a></li>
