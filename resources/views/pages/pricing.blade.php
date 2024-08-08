@@ -7,7 +7,7 @@
 @endphp
 
 {{-- layout --}}
-@extends('layouts.front')
+@extends('layouts.fronty')
 
 
 
