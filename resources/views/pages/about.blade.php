@@ -1,16 +1,3 @@
-@php
-
-use App\Models\DepositCoin;
-
-$logos = DepositCoin::inRandomOrder()
-        ->take(20)
-        ->get('logo_url');
-    
-    $page_title = 'About ' . site('name');
-    $short_description = site('name') . ' uses advanced Ai robots trained on extensive trading data and algorithms to analyze market trends and execute profitable trades with high precision.';
-    
-@endphp
-
 {{-- layout --}}
 @extends('layouts.front')
 
@@ -19,395 +6,454 @@ $logos = DepositCoin::inRandomOrder()
 
 
 @section('contents')
-    {{-- breadcrumb --}}
-    @include('pages.breadcrumb')
-    
-    
-    <!-- ===============>> Story section start here <<================= -->
-  <div class="story padding-top bg-color-3">
-    <div class="container" >
-      <div class="story__wrapper">
-        <div class="story__thumb" >
-          <div class="story__thumb-inner" data-aos="fade-up" data-aos-duration="800">
-            <img src="/asset/images/about/4.png" alt="story-image">
-            <div class="story__thumb-playbtn">
-              <a href="https://www.youtube.com/watch?v=uJSgaPIvgKk&amp;ab_channel=FreeTemplates" data-fslightbox><i
-                  class="fa-solid fa-circle-play"></i></a>
+    <main class="content">
+        <div class="breadcrumb-block w-full lg:h-[400px] sm:h-[360px] h-[320px] relative">
+            <div class="bg-img w-full h-full absolute top-0 left-0 z-[-1]"><img alt="banner" loading="lazy" width="4000"
+                    height="3000" decoding="async" data-nimg="1" class="w-full h-full object-cover"
+                    srcset="/finatex-next.vercel.app/_next/images/banner/about1.png&w=3840&q=75 1x"
+                    src="/finatex-next.vercel.app/_next/images/banner/about1.png&w=3840&q=75" style="color: transparent;">
             </div>
-          </div>
+            <div class="container relative h-full flex items-center">
+                <div class="heading-nav flex items-center gap-1 absolute top-8 left-4 py-1.5 px-4 rounded-full bg-line"><a
+                        class="hover:underline caption1 text-white" href="/">Home</a><svg
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                        viewBox="0 0 256 256" class="text-white">
+                        <path
+                            d="M141.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L124.69,128,50.34,53.66A8,8,0,0,1,61.66,42.34l80,80A8,8,0,0,1,141.66,133.66Zm80-11.32-80-80a8,8,0,0,0-11.32,11.32L204.69,128l-74.35,74.34a8,8,0,0,0,11.32,11.32l80-80A8,8,0,0,0,221.66,122.34Z">
+                        </path>
+                    </svg>
+                    <div class="caption1 text-white">About Us</div>
+                </div>
+                <div class="text-nav xl:w-1/2 md:w-3/5">
+                    <div class="heading3 text-white">About Us</div>
+                    <div class="sub-heading mt-4 text-white font-normal">We perform a full analysis of the client’s website
+                        and collect information about all the competitors to formulate a proper strategy.</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="story__shape">
-      <span class="story__shape-item story__shape-item--1"><span></span> </span>
-    </div>
-  </div>
-  <!-- ===============>> Story section end here <<================= -->
-
-
-
-
-
-  <!-- ===============>> About section start here <<================= -->
-  <section class="about about--style1 ">
-    <div class="container">
-      <div class="about__wrapper">
-        <div class="row gx-5  gy-4 gy-sm-0  align-items-center">
-          <div class="col-lg-6">
-            <div class="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
-              <div class="about__thumb-inner">
-                <div class="about__thumb-image floating-content">
-                  <img class="dark" src="/asset/images/about/1.png" alt="about-image">
-                  <div class="floating-content__top-left" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="floating-content__item">
-                      <h3 style="font-size: 3rem; font-weight: bold;"> <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5">30</span>
-                        Years
-                      </h3>
-                      <p>Trading Experience</p>
+        <div class="about-block lg:py-[100px] sm:py-16 py-10 bg-white">
+            <div class="container">
+                <div class="row flex max-lg:flex-col lg:items-center gap-y-6">
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-img w-full overflow-hidden rounded-3xl"><img alt="" loading="lazy"
+                                width="4000" height="4000" decoding="async" data-nimg="1" class="w-full h-full block"
+                                srcset="/finatex-next.vercel.app/_next/images/component/assessment.png&w=3840&q=75 1x"
+                                src="/finatex-next.vercel.app/_next/images/component/assessment.png&w=3840&q=75"
+                                style="color: transparent;"></div>
                     </div>
-                  </div>
-                  <div class="floating-content__bottom-right" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="floating-content__item">
-                      <h3 style="font-size: 3rem; font-weight: bold;"> <span class="purecounter" data-purecounter-start="0" data-purecounter-end="25">25K</span>K+
-                      </h3>
-                      <p>Satisfied Customers</p>
+                    <div class="w-full lg:w-1/2 flex-col lg:pl-20">
+                        <div class="heading3">Financial assessment</div>
+                        <div class="nav-infor mt-8">
+                            <div class="list-nav flex items-center gap-10 border-b border-line w-fit">
+                                <div
+                                    class="text-button-sm has-line-before line-2px line-blue cursor-pointer capitalize active">
+                                    about us</div>
+                                <div class="text-button-sm has-line-before line-2px line-blue cursor-pointer capitalize ">
+                                    mission</div>
+                                <div class="text-button-sm has-line-before line-2px line-blue cursor-pointer capitalize ">
+                                    vision</div>
+                            </div>
+                            <div class="description item-filter show">
+                                <div class="title text-secondary mt-4">We are devoted team providing premium financial
+                                    solutions. Explore our mission, values, and achievements as we empower clients for a
+                                    secure financial future.</div>
+                                <div class="more-infor mt-6">
+                                    <div class="infor flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                            class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Identification of monthly income</div>
+                                    </div>
+                                    <div class="infor flex items-center gap-3 mt-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                            class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Creation of savings and investment plan</div>
+                                    </div>
+                                    <div class="infor flex items-center gap-3 mt-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                            class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Management and calculation of monthly expenses</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description item-filter hide">
+                                <div class="title body3 text-secondary mt-4">Our mission is to provide comprehensive and
+                                    personalized financial solutions that empower our clients to achieve their financial
+                                    goals and secure their future.</div>
+                                <div class="more-infor mt-6">
+                                    <div class="infor flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                            class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Management and calculation of monthly expenses</div>
+                                    </div>
+                                    <div class="infor flex items-center gap-3 mt-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                            class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Identification of monthly income</div>
+                                    </div>
+                                    <div class="infor flex items-center gap-3 mt-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                            class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Creation of savings and investment plan</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description item-filter hide">
+                                <div class="title body3 text-secondary mt-4">Our unwavering vision is to be the most
+                                    trusted and preferred partner in achieving financial success, diligently guiding our
+                                    valued clients toward a secure and prosperous future.</div>
+                                <div class="more-infor mt-6">
+                                    <div class="infor flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                            class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Creation of savings and investment plan</div>
+                                    </div>
+                                    <div class="infor flex items-center gap-3 mt-3"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            fill="currentColor" viewBox="0 0 256 256" class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Management and calculation of monthly expenses</div>
+                                    </div>
+                                    <div class="infor flex items-center gap-3 mt-3"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            fill="currentColor" viewBox="0 0 256 256" class="text-blue text-xl">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                            </path>
+                                        </svg>
+                                        <div class="text-button">Identification of monthly income</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-block flex items-center gap-5 md:mt-10 mt-6 pb-2"><a
+                                class="button-main text-white bg-blue hover-button-black text-button rounded-full"
+                                href="contact-two.html">Get started</a><a
+                                class="button-main text-on-surface hover:bg-black hover:text-white hover:border-transparent bg-white text-button rounded-full border-2 border-blue flex items-center gap-2"
+                                href="contact-two.html"><i class="ph ph-phone text-xl"></i><span>(00) 123 456
+                                    789</span></a></div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about__content" data-aos="fade-left" data-aos-duration="800">
-              <div class="about__content-inner">
-                <h2 style="font-size: 3.5rem; font-weight: bold;">Meet <span>{{site('name')}}</span> unless miss the opportunity </h2>
-
-                <p class="mb-0">Hey there! So glad you stopped by to Meet {{site('name')}}. Don't miss out on this
-                  opportunity to learn about crypto-currencies trading and the amazing team that makes it all happen! {{site('name')}} is
-                  all about creating innovative solutions and providing top-notch services to our clients. From start to
-                  finish, we're dedicated to delivering advanced expert and robots trained on extensive trading data and algorithms to analyze market trends and execute profitable trades with high precision. </p>
-                
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- ===============>> About section start here <<================= -->
-
-
-
-
-
-  <!-- ========== Roadmap Section start Here========== -->
-  <section class="roadmap roadmap--style2 padding-top  padding-bottom bg-color">
-    <div class="container">
-      <div class="section-header section-header--max50">
-        <h2 class="mb-10 mt-minus-5" style="font-size: 2.8rem; font-weight: bold;"> <span class="style2">Roadmap </span> of plarform</h2>
-        <p>A product roadmap shows the path ahead, helps teams plan, and guides the delivery of the product.</p>
-      </div>
-      <div class="roadmap__wrapper">
-        <div class="roadmap__upper">
-          <div class="roadmap__upper-inner">
-            <div class="swiper">
-              <div class="roadmap__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="roadmap__item active">
-                      <div class="roadmap__item-inner roadmap__item-inner--vertical-line-bottom">
-                        <div class="roadmap__item-content">
-                          <h5 style="font-size: 1.5rem; font-weight: bold;">Idea</h5>
-                          <p>Got a crazy idea, hear me out:  automated trading machine.</p>
+        <div class="container">
+            <div class="counter-block lg:pb-[100px] sm:pb-16 pb-10">
+                <div class="grid xl:grid-cols-4 grid-cols-2 gap-y-8">
+                    <div class="item">
+                        <div class="flex flex-col items-center">
+                            <div class="count-block flex items-center">
+                                <div class="counter heading3">2.3</div><span class="heading3">k</span>
+                            </div>
+                            <div class="body1 text-secondary text-center">Business Setup Growth</div>
                         </div>
-                        <div class="roadmap__item-date">
-                          <span>Jan 01, 2020</span>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="roadmap__item roadmap__item--reverse">
-                      <div class="roadmap__item-inner roadmap__item-inner--vertical-line-top">
-                        <div class="roadmap__item-content">
-                          <h5 style="font-size: 1.5rem; font-weight: bold;">Framing</h5>
-                          <p>Just hang it up, but make sure it's straight. Done.</p>
+                    <div class="item">
+                        <div class="flex flex-col items-center">
+                            <div class="count-block flex items-center">
+                                <div class="counter heading3">1.77</div><span class="heading3">k</span>
+                            </div>
+                            <div class="body1 text-secondary text-center">Business Problem Solving</div>
                         </div>
-                        <div class="roadmap__item-date">
-                          <span>Mar 15, 2020 </span>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="roadmap__item">
-                      <div class="roadmap__item-inner roadmap__item-inner--vertical-line-bottom">
-                        <div class="roadmap__item-content">
-                          <h5 style="font-size: 1.5rem; font-weight: bold;">Design</h5>
-                          <p>Design can make things look good and function better.</p>
+                    <div class="item">
+                        <div class="flex flex-col items-center">
+                            <div class="count-block flex items-center">
+                                <div class="counter heading3">298</div><span class="heading3">k</span>
+                            </div>
+                            <div class="body1 text-secondary text-center">Goal achiever</div>
                         </div>
-                        <div class="roadmap__item-date">
-                          <span>Feb 01, 2021</span>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="roadmap__item roadmap__item--reverse">
-                      <div class="roadmap__item-inner roadmap__item-inner--vertical-line-top">
-                        <div class="roadmap__item-content">
-                          <h5 style="font-size: 1.5rem; font-weight: bold;">Development</h5>
-                          <p>Development is an important aspect of life, keep growing!</p>
+                    <div class="item">
+                        <div class="flex flex-col items-center">
+                            <div class="count-block flex items-center">
+                                <div class="counter heading3">246</div><span class="heading3">k</span>
+                            </div>
+                            <div class="body1 text-secondary text-center">Passive income earners</div>
                         </div>
-                        <div class="roadmap__item-date">
-                          <span>Aug 29, 2021</span>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="roadmap__item">
-                      <div class="roadmap__item-inner roadmap__item-inner--vertical-line-bottom">
-                        <div class="roadmap__item-content">
-                          <h5 style="font-size: 1.5rem; font-weight: bold;">Testing</h5>
-                          <p>Testing is the ultimate game of figuring out what works.</p>
-                        </div>
-                        <div class="roadmap__item-date">
-                          <span>Mar 11, 2022</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide ">
-                    <div class="roadmap__item roadmap__item--reverse">
-                      <div class="roadmap__item-inner roadmap__item-inner--vertical-line-top">
-                        <div class="roadmap__item-content">
-                          <h5 style="font-size: 1.5rem; font-weight: bold;">Launched</h5>
-                          <p>We launched our new product and we are thrilled!</p>
-                        </div>
-                        <div class="roadmap__item-date">
-                          <span>Jan 03, 2023</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- ========== Roadmap Section Ends Here========== -->
-
-
-
-
-
-
-  <!-- ===============>> Team section start here <<================= -->
-  <section class="team padding-top padding-bottom">
-    <div class="section-header section-header--max50">
-      <h2 class="mb-10 mt-minus-5" style="font-size: 3rem; font-weight: bold;">Meet with <span class="style2">our team</span></h2>
-    </div>
-    <div class="container">
-      <div class="team__wrapper">
-        <div class="row g-4 align-items-center">
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="800">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/1.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Bogdan Constantin</a> </h6>
-                      <p class="mb-0">Trade Captain</p>
+        <div class="service-block bg-surface lg:py-[100px] sm:py-16 py-10">
+            <div class="container">
+                <div class="text-heading flex items-center justify-center">
+                    <div class="">
+                        <div class="heading3 text-center">Our Services</div>
+                        <div class="desc text-secondary text-center mt-3">Customized financial services designed to meet
+                            your unique needs and drive your financial success</div>
                     </div>
-                    
-                  </div>
                 </div>
-              </div>
+                <div class="list-service grid xl:grid-cols-4 sm:grid-cols-2 gap-8 md:mt-10 mt-6 gap-y-10">
+                    <div class="service-item py-8 px-7 bg-white rounded-lg hover-box-shadow"><a
+                            class="service-item-main flex flex-col justify-between h-full"
+                            href="/service/service-detail/cryptocurrency-trading">
+                            <div class="heading flex items-center gap-4"><i
+                                    class="icon-coin-chair text-blue md:text-5xl text-4xl"></i>
+                                <div class="heading7 hover:text-blue duration-300">Cryptocurrency Trading</div>
+                            </div>
+                            <div class="text-secondary mt-4">Experience the excitement and potential of the cryptocurrency
+                                market with our expert trading services.</div>
+                            <div class="read-more flex items-center gap-1 mt-4">
+                                <div class="text-button-sm">Explore Plan</div><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                    class="text-blue text-sm duration-300">
+                                    <path
+                                        d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div class="service-item py-8 px-7 bg-white rounded-lg hover-box-shadow"><a
+                            class="service-item-main flex flex-col justify-between h-full"
+                            href="/service/service-detail/portfolio-management">
+                            <div class="heading flex items-center gap-4"><i
+                                    class="icon-hand-tick text-blue md:text-5xl text-4xl"></i>
+                                <div class="heading7 hover:text-blue duration-300">Portfolio Management</div>
+                            </div>
+                            <div class="text-secondary mt-4">We analyze market trends, manage risks, and optimize your
+                                portfolio to maximize returns and achieve your financial goals.</div>
+                            <div class="read-more flex items-center gap-1 mt-4">
+                                <div class="text-button-sm">Explore Plan</div><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                    class="text-blue text-sm duration-300">
+                                    <path
+                                        d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div class="service-item py-8 px-7 bg-white rounded-lg hover-box-shadow"><a
+                            class="service-item-main flex flex-col justify-between h-full"
+                            href="/service/service-detail/investment-advice">
+                            <div class="heading flex items-center gap-4"><i
+                                    class="icon-hand-house text-blue md:text-5xl text-4xl"></i>
+                                <div class="heading7 hover:text-blue duration-300">Investment Advice</div>
+                            </div>
+                            <div class="text-secondary mt-4">Our team of experienced advisors will guide you in making
+                                informed investment, whether you're a beginner trader.</div>
+                            <div class="read-more flex items-center gap-1 mt-4">
+                                <div class="text-button-sm">Explore Plan</div><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                    class="text-blue text-sm duration-300">
+                                    <path
+                                        d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a></div>
+                    <div class="service-item py-8 px-7 bg-white rounded-lg hover-box-shadow"><a
+                            class="service-item-main flex flex-col justify-between h-full"
+                            href="/service/service-detail/risk-management">
+                            <div class="heading flex items-center gap-4"><i
+                                    class="icon-gear-warning text-blue md:text-5xl text-4xl"></i>
+                                <div class="heading7 hover:text-blue duration-300">Risk Management</div>
+                            </div>
+                            <div class="text-secondary mt-4">We employ industry-leading tools and techniques to protect
+                                your investments and minimize potential losses.</div>
+                            <div class="read-more flex items-center gap-1 mt-4">
+                                <div class="text-button-sm">Explore Plan</div><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                    class="text-blue text-sm duration-300">
+                                    <path
+                                        d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a></div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="900">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/2.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Mechale smith</a> </h6>
-                      <p class="mb-0">Financial Consultant</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1000">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/3.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Marius Gherghe</a> </h6>
-                      <p class="mb-0">Operation Consultant</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1100">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/4.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Dang Xuan</a> </h6>
-                      <p class="mb-0">Trade Consultant</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="800">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/5.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Petrisor Obae</a> </h6>
-                      <p class="mb-0">HR Consultant</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="900">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/6.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Paul George</a> </h6>
-                      <p class="mb-0">Technology Consultant</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1000">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/7.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Cosmin Nae</a> </h6>
-                      <p class="mb-0">Customer Consultant</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1100">
-              <div class="team__item-inner team__item-inner--shape">
-                <div class="team__item-thumb team__item-thumb--style2">
-                  <img src="/asset/images/team/home2/8.png" alt="Team Image" class="dark">
-                </div>
-                <div class="team__item-content ">
-                  <div class="team__item-author team__item-author--style2">
-                    <div class="team__item-authorinfo">
-                      <h6 class="mb-0" style="font-size: 1.1rem; font-weight: bold;"><a href="#" class="stretched-link">Gabi Safta</a> </h6>
-                      <p class="mb-0">Project Manager</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- ===============>> Team section start here <<================= -->
-
-
-
-
-
-
-  <!-- ===============>> cta section start here <<================= -->
-  <section class="cta padding-top padding-bottom  bg-color">
-    <div class="container">
-      <div class="cta__wrapper">
-        <div class="cta__newsletter justify-content-center">
-          <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000">
-            <div class="cta__thumb">
-              <img src="/asset/images/cta/3.png" alt="cta-thumb">
-            </div>
-            <div class="cta__subscribe">
-              <h2 > <span>Subscribe</span> our news</h2>
-              <p>Hey! Are you tired of missing out on our updates? Subscribe to our news now and stay in the loop!</p>
-              <form class="cta-form cta-form--style2 form-subscribe" action="#">
-                <div class="cta-form__inner d-sm-flex align-items-center">
-                  <input type="email" class="form-control form-control--style2 mb-3 mb-sm-0"
-                    placeholder="Email Address">
-                  <button class="trk-btn  trk-btn--large trk-btn--secondary2" type="submit">Submit</button>
+        <div class="our-team-block pt-[100px] sm:pt-16 pt-10 bg-white">
+            <div class="container">
+                <div class="heading-block">
+                    <div class="heading3">Our Professional Team</div>
                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="cta__shape">
-          <span class="cta__shape-item cta__shape-item--1"><img src="/asset/images/cta/2.png" alt="shape icon"></span>
-          <span class="cta__shape-item cta__shape-item--2"><img src="/asset/images/cta/4.png" alt="shape icon"></span>
-          <span class="cta__shape-item cta__shape-item--3"><img src="/asset/images/cta/5.png" alt="shape icon"></span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ===============>> cta section start here <<================= -->
-                    
-
+                <div class="list-member md:mt-10 mt-6 grid xl:grid-cols-4 sm:grid-cols-2 gap-8">
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="bg-img w-full"><img alt="" loading="lazy" width="1000" height="1000"
+                                decoding="async" data-nimg="1" class="w-full h-full display-block"
+                                srcset="/finatex-next.vercel.app/_next/images/member/mem1.png&w=1080&q=75 1x, /finatex-next.vercel.app/_next/images/member/mem1.png&w=2048&q=75 2x"
+                                src="/finatex-next.vercel.app/_next/images/member/mem1.png&w=2048&q=75"
+                                style="color: transparent;">
+                            <div class="list-social bg-white"><a target="_blank" href="http://facebook.com"> <i
+                                        class="icon-facebook text-sm"></i></a><a target="_blank"
+                                    href="http://linkedin.com"> <i class="icon-in text-sm"></i></a><a target="_blank"
+                                    href="http://twitter.com"> <i class="icon-twitter fs-12"></i></a><a target="_blank"
+                                    href="http://instagram.com"> <i class="icon-insta fs-12"></i></a></div>
+                        </div>
+                        <div class="infor text-center pt-4">
+                            <div class="name heading6">Maria Takado</div>
+                            <div class="caption1 text-secondary">Senior UI-UX Designer </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="bg-img w-full"><img alt="" loading="lazy" width="1000" height="1000"
+                                decoding="async" data-nimg="1" class="w-full h-full display-block"
+                                srcset="/finatex-next.vercel.app/_next/images/member/mem2.png&w=1080&q=75 1x, /finatex-next.vercel.app/_next/images/member/mem2.png&w=2048&q=75 2x"
+                                src="/finatex-next.vercel.app/_next/images/member/mem2.png&w=2048&q=75"
+                                style="color: transparent;">
+                            <div class="list-social bg-white"><a target="_blank" href="http://facebook.com"> <i
+                                        class="icon-facebook text-sm"></i></a><a target="_blank"
+                                    href="http://linkedin.com"> <i class="icon-in text-sm"></i></a><a target="_blank"
+                                    href="http://twitter.com"> <i class="icon-twitter fs-12"></i></a><a target="_blank"
+                                    href="http://instagram.com"> <i class="icon-insta fs-12"></i></a></div>
+                        </div>
+                        <div class="infor text-center pt-4">
+                            <div class="name heading6">Kim Naika </div>
+                            <div class="caption1 text-secondary">CEO Technology Avitex</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="bg-img w-full"><img alt="" loading="lazy" width="1000" height="1000"
+                                decoding="async" data-nimg="1" class="w-full h-full display-block"
+                                srcset="/finatex-next.vercel.app/_next/images/member/mem3.png&w=1080&q=75 1x, /finatex-next.vercel.app/_next/images/member/mem3.png&w=2048&q=75 2x"
+                                src="/finatex-next.vercel.app/_next/images/member/mem3.png&w=2048&q=75"
+                                style="color: transparent;">
+                            <div class="list-social bg-white"><a target="_blank" href="http://facebook.com"> <i
+                                        class="icon-facebook text-sm"></i></a><a target="_blank"
+                                    href="http://linkedin.com"> <i class="icon-in text-sm"></i></a><a target="_blank"
+                                    href="http://twitter.com"> <i class="icon-twitter fs-12"></i></a><a target="_blank"
+                                    href="http://instagram.com"> <i class="icon-insta fs-12"></i></a></div>
+                        </div>
+                        <div class="infor text-center pt-4">
+                            <div class="name heading6">John Doe</div>
+                            <div class="caption1 text-secondary">Creative Director at Avitex </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="bg-img w-full"><img alt="" loading="lazy" width="1000" height="1000"
+                                decoding="async" data-nimg="1" class="w-full h-full display-block"
+                                srcset="/finatex-next.vercel.app/_next/images/member/mem4.png&w=1080&q=75 1x, /finatex-next.vercel.app/_next/images/member/mem4.png&w=2048&q=75 2x"
+                                src="/finatex-next.vercel.app/_next/images/member/mem4.png&w=2048&q=75"
+                                style="color: transparent;">
+                            <div class="list-social bg-white"><a target="_blank" href="http://facebook.com"> <i
+                                        class="icon-facebook text-sm"></i></a><a target="_blank"
+                                    href="http://linkedin.com"> <i class="icon-in text-sm"></i></a><a target="_blank"
+                                    href="http://twitter.com"> <i class="icon-twitter fs-12"></i></a><a target="_blank"
+                                    href="http://instagram.com"> <i class="icon-insta fs-12"></i></a></div>
+                        </div>
+                        <div class="infor text-center pt-4">
+                            <div class="name heading6">Dave Nguyen</div>
+                            <div class="caption1 text-secondary">CEO Technology Avitex</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 hidden">
+                        <div class="bg-img w-full"><img alt="" loading="lazy" width="1000" height="1000"
+                                decoding="async" data-nimg="1" class="w-full h-full display-block"
+                                srcset="/finatex-next.vercel.app/_next/images/member/mem2.png&w=1080&q=75 1x, /finatex-next.vercel.app/_next/images/member/mem2.png&w=2048&q=75 2x"
+                                src="/finatex-next.vercel.app/_next/images/member/mem2.png&w=2048&q=75"
+                                style="color: transparent;">
+                            <div class="list-social bg-white"><a target="_blank" href="http://facebook.com"> <i
+                                        class="icon-facebook text-sm"></i></a><a target="_blank"
+                                    href="http://linkedin.com"> <i class="icon-in text-sm"></i></a><a target="_blank"
+                                    href="http://twitter.com"> <i class="icon-twitter fs-12"></i></a><a target="_blank"
+                                    href="http://instagram.com"> <i class="icon-insta fs-12"></i></a></div>
+                        </div>
+                        <div class="infor text-center pt-4">
+                            <div class="name heading6">Christina</div>
+                            <div class="caption1 text-secondary">CEO Technology Avitex</div>
+                        </div>
+                    </div>
                 </div>
-
-    
-
-    
-@endsection
-
-@section('scripts')
+            </div>
+        </div>
+        <div class="partner-block md:py-[100px] py-[32px]">
+            <div class="container">
+                <div class="list-partner">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                        <div class="swiper-wrapper"
+                            style="transition-duration: 0ms; transform: translate3d(-426.667px, 0px, 0px); transition-delay: 0ms;">
+                            <div class="swiper-slide" style="width: 197.333px; margin-right: 16px;"
+                                data-swiper-slide-index="0">
+                                <div class="partner-item relative flex items-center justify-center md:h-16 h-10"><img
+                                        alt="1" loading="lazy" width="500" height="500" decoding="async"
+                                        data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/lh.png&w=640&q=75 1x, /finatex-next.vercel.app/_next/images/partner/lh.png&w=1080&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/lh.png&w=1080&q=75"
+                                        style="color: transparent;"></div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-prev" style="width: 197.333px; margin-right: 16px;"
+                                data-swiper-slide-index="1">
+                                <div class="partner-item relative flex items-center justify-center md:h-16 h-10"><img
+                                        alt="1" loading="lazy" width="500" height="500" decoding="async"
+                                        data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/shang.png&w=640&q=75 1x, /finatex-next.vercel.app/_next/images/partner/shang.png&w=1080&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/shang.png&w=1080&q=75"
+                                        style="color: transparent;"></div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" style="width: 197.333px; margin-right: 16px;"
+                                data-swiper-slide-index="2">
+                                <div class="partner-item relative flex items-center justify-center md:h-16 h-10"><img
+                                        alt="1" loading="lazy" width="500" height="500" decoding="async"
+                                        data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/pana.png&w=640&q=75 1x, /finatex-next.vercel.app/_next/images/partner/pana.png&w=1080&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/pana.png&w=1080&q=75"
+                                        style="color: transparent;"></div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" style="width: 197.333px; margin-right: 16px;"
+                                data-swiper-slide-index="3">
+                                <div class="partner-item relative flex items-center justify-center md:h-16 h-10"><img
+                                        alt="1" loading="lazy" width="500" height="500" decoding="async"
+                                        data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/masa.png&w=640&q=75 1x, /finatex-next.vercel.app/_next/images/partner/masa.png&w=1080&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/masa.png&w=1080&q=75"
+                                        style="color: transparent;"></div>
+                            </div>
+                            <div class="swiper-slide" style="width: 197.333px; margin-right: 16px;"
+                                data-swiper-slide-index="4">
+                                <div class="partner-item relative flex items-center justify-center md:h-16 h-10"><img
+                                        alt="1" loading="lazy" width="500" height="500" decoding="async"
+                                        data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/van.png&w=640&q=75 1x, /finatex-next.vercel.app/_next/images/partner/van.png&w=1080&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/van.png&w=1080&q=75"
+                                        style="color: transparent;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cta-block style-two relative lg:h-[120px] h-[180px]">
+            <div class="bg-cta w-full h-full absolute top-0 left-0 z-[-1]"><img alt="" loading="lazy"
+                    width="5000" height="5000" decoding="async" data-nimg="1" class="w-full h-full object-cover"
+                    srcset="/finatex-next.vercel.app/_next/images/cta/bg-cta1.png&w=3840&q=75 1x"
+                    src="/finatex-next.vercel.app/_next/images/cta/bg-cta1.png&w=3840&q=75" style="color: transparent;">
+            </div>
+            <div class="container flex items-center justify-between max-lg:flex-col max-lg:justify-center gap-6 h-full">
+                <div class="heading5 max-lg:text-center text-white">Looking for a first-class business consultant?</div><a
+                    class="button-main rounded-full hover:bg-black hover:text-white bg-white text-button px-9 py-3"
+                    href="/contact/contact-two">Get A Quote</a>
+            </div>
+        </div>
+    </main>
 @endsection

@@ -1,9 +1,10 @@
 @php
     use App\Models\Bot;
-    
+
     $page_title = 'Terms of Service';
-    $short_description = 'Prior to availing any of our services, we kindly request that you review and acknowledge our Acceptable Use Terms of Service. Your utilization of our services constitutes your agreement to abide by the terms and conditions outlined therein. We appreciate your understanding and compliance.';
-    
+    $short_description =
+        'Prior to availing any of our services, we kindly request that you review and acknowledge our Acceptable Use Terms of Service. Your utilization of our services constitutes your agreement to abide by the terms and conditions outlined therein. We appreciate your understanding and compliance.';
+
 @endphp
 
 {{-- layout --}}
@@ -33,7 +34,8 @@
 
                     <h2 class="text-2xl rescron-font-bold">Description of Services</h2>
                     <p>
-                        {{ site('name') }} provides a trading platform that utilizes advanced technology to analyze market trends
+                        {{ site('name') }} provides a trading platform that utilizes advanced technology to analyze market
+                        trends
                         and execute trades. Our Services are designed to facilitate trading activities, and we do not
                         provide financial advice. You are solely responsible for your trading decisions.
                     </p>
@@ -105,7 +107,8 @@
                     <p>
                         All content included in or made available through our Services, including text, graphics, logos,
                         button icons, images, audio clips, digital downloads, and data compilations, is the property of
-                        {{ site('name') }} or its content suppliers and is protected by United States and international copyright
+                        {{ site('name') }} or its content suppliers and is protected by United States and international
+                        copyright
                         laws.
                     </p>
 
@@ -146,20 +149,23 @@
 
                     <h2 class="text-2xl rescron-font-bold"> Account Suspension and Termination</h2>
                     <p>
-                        {{ site('name') }} reserves the right to suspend or terminate user accounts for violations of these Terms or
+                        {{ site('name') }} reserves the right to suspend or terminate user accounts for violations of these
+                        Terms or
                         for any other reason, at its sole discretion.
                     </p>
 
                     <h2 class="text-2xl rescron-font-bold"> Third-Party Links and Services</h2>
                     <p>
-                        Our Services may contain links to third-party websites or services. {{ site('name') }} does not endorse or
+                        Our Services may contain links to third-party websites or services. {{ site('name') }} does not
+                        endorse or
                         control these third-party websites or services and is not responsible for their content or
                         practices. Use of third-party websites or services is at your own risk.
                     </p>
 
                     <h2 class="text-2xl rescron-font-bold"> Indemnification</h2>
                     <p>
-                        You agree to indemnify and hold {{ site('name') }}, its affiliates, officers, directors, employees, and
+                        You agree to indemnify and hold {{ site('name') }}, its affiliates, officers, directors, employees,
+                        and
                         agents harmless from any claims, losses, damages, liabilities, and expenses (including attorney's
                         fees) arising from or related to your use of our Services or violation of these Terms.
                     </p>
@@ -175,7 +181,8 @@
 
                     <h2 class="text-2xl rescron-font-bold"> Entire Agreement</h2>
                     <p>
-                        These Terms constitute the entire agreement between you and {{ site('name') }} with respect to the subject
+                        These Terms constitute the entire agreement between you and {{ site('name') }} with respect to the
+                        subject
                         matter hereof and supersedes all prior or contemporaneous communications and proposals, whether oral
                         or written, between the parties.
                     </p>
@@ -188,14 +195,15 @@
 
                     <h2 class="text-2xl rescron-font-bold"> Waiver and Severability</h2>
                     <p>
-                        The failure of {{ site('name') }} to enforce any right or provision of these Terms shall not constitute a
+                        The failure of {{ site('name') }} to enforce any right or provision of these Terms shall not
+                        constitute a
                         waiver of such right or provision. If any provision of these Terms is found by a court of competent
                         jurisdiction to be invalid, the parties nevertheless agree that the court should endeavor to give
                         effect to the parties' intentions as reflected in the provision, and the other provisions of these
                         Terms remain in full force and effect.
                     </p>
 
-                    <h2 class="text-2xl rescron-font-bold"> No Third-Party Beneficiaries</h2> 
+                    <h2 class="text-2xl rescron-font-bold"> No Third-Party Beneficiaries</h2>
                     <p>
                         These Terms do not create any third-party beneficiary rights.
                     </p>

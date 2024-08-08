@@ -1,11 +1,10 @@
 @php
     use App\Models\Bot;
-    
-    $page_title = 'Privacy Policy';
-    $short_description = 'Prior to availing any of our services, we kindly request that you review and acknowledge our Privacy Policy. ';
 
-    
-    
+    $page_title = 'Privacy Policy';
+    $short_description =
+        'Prior to availing any of our services, we kindly request that you review and acknowledge our Privacy Policy. ';
+
 @endphp
 
 {{-- layout --}}
@@ -22,12 +21,13 @@
     <section class="w-full px-5 md:px-20 py-10 mt-10">
         <div class="w-full  flex justify-center">
             <div class="w-full flex items-center justify-center text-gray-500">
-                <div class="w-full lg:w-3/4 grid grid-cols-1 gap-5 mt-10">                   
+                <div class="w-full lg:w-3/4 grid grid-cols-1 gap-5 mt-10">
 
-                    
+
                     <h2 class="text-2xl rescron-font-bold">1. Introduction</h2>
 
-                    <p>Welcome to {{ site('name') }}. At {{ site('name') }}, we respect your privacy and are committed to protecting your
+                    <p>Welcome to {{ site('name') }}. At {{ site('name') }}, we respect your privacy and are committed to
+                        protecting your
                         personal information. This Privacy Policy is designed to help you understand how we collect, use,
                         disclose, and safeguard your personal information. By using our services, you consent to the
                         practices described in this Privacy Policy.</p>
@@ -83,7 +83,8 @@
 
                     <h2 class="text-2xl rescron-font-bold">5. Cookies and Similar Technologies</h2>
 
-                    <p>{{ site('name') }} uses cookies and similar technologies to enhance user experience and collect Non-Personal
+                    <p>{{ site('name') }} uses cookies and similar technologies to enhance user experience and collect
+                        Non-Personal
                         Information. You can manage cookie preferences through your browser settings, but disabling cookies
                         may affect the functionality of our Services.</p>
 
