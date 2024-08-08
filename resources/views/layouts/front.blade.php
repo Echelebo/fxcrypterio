@@ -708,6 +708,32 @@
     <script>
         self.__next_f.push([1, ""])
     </script><next-route-announcer style="position: absolute;"></next-route-announcer>
+
+
+    <script>
+        const loaderProp = ({
+                src
+            }) => {
+                return src;
+            }
+
+            <
+            Image src = {
+                currentImage.imageurl
+            }
+        alt = {
+            currentImage.imageurl
+        }
+        layout = "fill"
+        className = {
+            styles.imageSize
+        }
+        loader = {
+            loaderProp
+        }
+        />
+    </script>
+
 </body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar><grammarly-desktop-integration
     data-grammarly-shadow-root="true"></grammarly-desktop-integration><chatgpt-sidebar-popups
     data-gpts-theme="light"></chatgpt-sidebar-popups>
