@@ -8,8 +8,8 @@
                 <div class="slider-item slider-first">
                     <div class="bg-img"><img alt="bgslider" fetchpriority="high" width="4000" height="3000" decoding="async"
                             data-nimg="1" class="w-full h-full object-cover" style="color:transparent"
-                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fslider%2Fslider6.png&w=3840&q=75 1x"
-                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fslider%2Fslider6.png&w=3840&q=75"></div>
+                            srcset="/finatex-next.vercel.app/_next/images/slider/slider6.png&w=3840&q=75 1x"
+                            src="/finatex-next.vercel.app/_next/images/slider/slider6.png&w=3840&q=75"></div>
                     <div class="container">
                         <div class="text-content">
                             <div class="heading2">
@@ -48,45 +48,50 @@
                                         class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                         <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                             data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-1.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-1.png&w=640&q=75 2x"
-                                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-1.png&w=640&q=75"
-                                            style="color: transparent;"></div>
+                                            srcset="/finatex-next.vercel.app/_next/images/partner/Logo-1.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-1.png&w=640&q=75 2x"
+                                            src="/finatex-next.vercel.app/_next/images/partner/Logo-1.png&w=640&q=75"
+                                            style="color: transparent;">
+                                    </div>
                                 </div>
                                 <div class="rfm-child" style="--transform: none;">
                                     <div
                                         class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                         <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                             data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-2.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-2.png&w=640&q=75 2x"
-                                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-2.png&w=640&q=75"
-                                            style="color: transparent;"></div>
+                                            srcset="/finatex-next.vercel.app/_next/images/partner/Logo-2.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-2.png&w=640&q=75 2x"
+                                            src="/finatex-next.vercel.app/_next/images/partner/Logo-2.png&w=640&q=75"
+                                            style="color: transparent;">
+                                    </div>
                                 </div>
                                 <div class="rfm-child" style="--transform: none;">
                                     <div
                                         class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                         <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                             data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-3.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-3.png&w=640&q=75 2x"
-                                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-3.png&w=640&q=75"
-                                            style="color: transparent;"></div>
+                                            srcset="/finatex-next.vercel.app/_next/images/partner/Logo-3.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-3.png&w=640&q=75 2x"
+                                            src="/finatex-next.vercel.app/_next/images/partner/Logo-3.png&w=640&q=75"
+                                            style="color: transparent;">
+                                    </div>
                                 </div>
                                 <div class="rfm-child" style="--transform: none;">
                                     <div
                                         class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                         <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                             data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-4.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-4.png&w=640&q=75 2x"
-                                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-4.png&w=640&q=75"
-                                            style="color: transparent;"></div>
+                                            srcset="/finatex-next.vercel.app/_next/images/partner/Logo-4.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-4.png&w=640&q=75 2x"
+                                            src="/finatex-next.vercel.app/_next/images/partner/Logo-4.png&w=640&q=75"
+                                            style="color: transparent;">
+                                    </div>
                                 </div>
                                 <div class="rfm-child" style="--transform: none;">
                                     <div
                                         class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                         <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                             data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-5.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-5.png&w=640&q=75 2x"
-                                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-5.png&w=640&q=75"
-                                            style="color: transparent;"></div>
+                                            srcset="/finatex-next.vercel.app/_next/images/partner/Logo-5.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-5.png&w=640&q=75 2x"
+                                            src="/finatex-next.vercel.app/_next/images/partner/Logo-5.png&w=640&q=75"
+                                            style="color: transparent;">
+                                    </div>
                                 </div>
                                 <div class="rfm-child" style="--transform: none;">
                                     <div
@@ -94,9 +99,10 @@
                                         <img alt="1" loading="lazy" width="300" height="300"
                                             decoding="async" data-nimg="1"
                                             class="h-full w-auto duration-500 relative object-cover"
-                                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo.png&w=640&q=75 2x"
-                                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo.png&w=640&q=75"
-                                            style="color: transparent;"></div>
+                                            srcset="/finatex-next.vercel.app/_next/images/partner/Logo.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo.png&w=640&q=75 2x"
+                                            src="/finatex-next.vercel.app/_next/images/partner/Logo.png&w=640&q=75"
+                                            style="color: transparent;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -107,54 +113,60 @@
                                     class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                     <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-1.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-1.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-1.png&w=640&q=75"
-                                        style="color: transparent;"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/Logo-1.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-1.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/Logo-1.png&w=640&q=75"
+                                        style="color: transparent;">
+                                </div>
                             </div>
                             <div class="rfm-child" style="--transform: none;">
                                 <div
                                     class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                     <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-2.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-2.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-2.png&w=640&q=75"
-                                        style="color: transparent;"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/Logo-2.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-2.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/Logo-2.png&w=640&q=75"
+                                        style="color: transparent;">
+                                </div>
                             </div>
                             <div class="rfm-child" style="--transform: none;">
                                 <div
                                     class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                     <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-3.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-3.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-3.png&w=640&q=75"
-                                        style="color: transparent;"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/Logo-3.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-3.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/Logo-3.png&w=640&q=75"
+                                        style="color: transparent;">
+                                </div>
                             </div>
                             <div class="rfm-child" style="--transform: none;">
                                 <div
                                     class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                     <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-4.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-4.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-4.png&w=640&q=75"
-                                        style="color: transparent;"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/Logo-4.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-4.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/Logo-4.png&w=640&q=75"
+                                        style="color: transparent;">
+                                </div>
                             </div>
                             <div class="rfm-child" style="--transform: none;">
                                 <div
                                     class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                     <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-5.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-5.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo-5.png&w=640&q=75"
-                                        style="color: transparent;"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/Logo-5.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo-5.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/Logo-5.png&w=640&q=75"
+                                        style="color: transparent;">
+                                </div>
                             </div>
                             <div class="rfm-child" style="--transform: none;">
                                 <div
                                     class="brand-item relative flex items-center justify-center md:h-[34px] h-[30px] md:mx-14 mx-10">
                                     <img alt="1" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="h-full w-auto duration-500 relative object-cover"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fpartner%2FLogo.png&w=640&q=75"
-                                        style="color: transparent;"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/partner/Logo.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/partner/Logo.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/partner/Logo.png&w=640&q=75"
+                                        style="color: transparent;">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -167,8 +179,8 @@
                     <div class="bg-img w-full h-full rounded-2xl overflow-hidden"><img alt="" loading="lazy"
                             width="5000" height="5000" decoding="async" data-nimg="1"
                             class="w-full h-full object-cover" style="color:transparent"
-                            srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fcomponent%2Fthumbnail6.png&w=3840&q=75 1x"
-                            src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fcomponent%2Fthumbnail6.png&w=3840&q=75"></div><span
+                            srcset="/finatex-next.vercel.app/_next/images/component/thumbnail6.png&w=3840&q=75 1x"
+                            src="/finatex-next.vercel.app/_next/images/component/thumbnail6.png&w=3840&q=75"></div><span
                         class="absolute sm:w-20 w-16 sm:h-20 h-16 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center bg-white rounded-full cursor-pointer duration-300 text-critical hover:bg-critical hover:text-white"><svg
                             xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
                             viewBox="0 0 256 256" class="sm:text-4xl text-3xl">
@@ -247,7 +259,8 @@
                             href="/service/service-detail/blockchain-development">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
-                                <i class="icon-pc-code text-white md:text-5xl text-4xl"></i></div>
+                                <i class="icon-pc-code text-white md:text-5xl text-4xl"></i>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Development
                             </div>
                             <div class="text-placehover mt-3">Experience the excitement and potential of the cryptocurrency
@@ -258,7 +271,8 @@
                             href="/service/service-detail/smart-contract-development">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
-                                <i class="icon-code text-white md:text-5xl text-4xl"></i></div>
+                                <i class="icon-code text-white md:text-5xl text-4xl"></i>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Smart Contract Development
                             </div>
                             <div class="text-placehover mt-3">We analyze market trends, manage risks, and optimize your
@@ -269,7 +283,8 @@
                             href="/service/service-detail/blockchain-integration">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
-                                <i class="icon-lamp-gear text-white md:text-5xl text-4xl"></i></div>
+                                <i class="icon-lamp-gear text-white md:text-5xl text-4xl"></i>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Integration
                             </div>
                             <div class="text-placehover mt-3">Our team of experienced advisors will guide you in making
@@ -280,7 +295,8 @@
                             href="/service/service-detail/blockchain-consulting">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
-                                <i class="icon-text-pen text-white md:text-5xl text-4xl"></i></div>
+                                <i class="icon-text-pen text-white md:text-5xl text-4xl"></i>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Consulting
                             </div>
                             <div class="text-placehover mt-3">We employ industry-leading tools and techniques to protect
@@ -291,7 +307,8 @@
                             href="/service/service-detail/ico/sto-development">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
-                                <i class="icon-chart text-white md:text-5xl text-4xl"></i></div>
+                                <i class="icon-chart text-white md:text-5xl text-4xl"></i>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">ICO/STO Development</div>
                             <div class="text-placehover mt-3">We provide timely reports, market updates, and data-driven
                                 insights to help you make informed trading decisions.</div>
@@ -301,7 +318,8 @@
                             href="/service/service-detail/wallet-development">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
-                                <i class="icon-vali text-white md:text-5xl text-4xl"></i></div>
+                                <i class="icon-vali text-white md:text-5xl text-4xl"></i>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Wallet Development</div>
                             <div class="text-placehover mt-3">Expand your knowledge and skills in cryptocurrency trading
                                 through our educational resources.</div>
@@ -315,8 +333,8 @@
                     <div class="w-full lg:w-1/2 sm:w-2/3 xl:px-16 px-10">
                         <div class="bg-img w-full"><img alt="img" loading="lazy" width="4000" height="4000"
                                 decoding="async" data-nimg="1" class="w-full" style="color:transparent"
-                                srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fcomponent%2Fearth6.png&w=3840&q=75 1x"
-                                src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fcomponent%2Fearth6.png&w=3840&q=75"></div>
+                                srcset="/finatex-next.vercel.app/_next/images/component/earth6.png&w=3840&q=75 1x"
+                                src="/finatex-next.vercel.app/_next/images/component/earth6.png&w=3840&q=75"></div>
                     </div>
                     <div class="w-full xl:w-5/12 lg:w-1/2">
                         <div class="text-button-uppercase text-orange">People Trust Us</div>
@@ -331,32 +349,37 @@
                                     class="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[3]">
                                     <img alt="" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="full h-full rounded-full" style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar3.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar3.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar3.png&w=640&q=75"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar3.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/member/avatar3.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar3.png&w=640&q=75">
+                                </div>
                                 <div
                                     class="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[2] -ml-3">
                                     <img alt="" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="full h-full rounded-full" style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar4.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar4.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar4.png&w=640&q=75"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar4.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/member/avatar4.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar4.png&w=640&q=75">
+                                </div>
                                 <div
                                     class="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[1] -ml-3">
                                     <img alt="" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="full h-full rounded-full" style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar5.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar5.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar5.png&w=640&q=75"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar5.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/member/avatar5.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar5.png&w=640&q=75">
+                                </div>
                                 <div
                                     class="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[2] -ml-3 max-[450px]:hidden">
                                     <img alt="" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="full h-full rounded-full" style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar1.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar1.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar1.png&w=640&q=75"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar1.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/member/avatar1.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar1.png&w=640&q=75">
+                                </div>
                                 <div
                                     class="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[1] -ml-3 max-[400px]:hidden">
                                     <img alt="" loading="lazy" width="300" height="300" decoding="async"
                                         data-nimg="1" class="full h-full rounded-full" style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar2.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar2.png&w=640&q=75 2x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar2.png&w=640&q=75"></div>
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar2.png&w=384&q=75 1x, /finatex-next.vercel.app/_next/images/member/avatar2.png&w=640&q=75 2x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar2.png&w=640&q=75">
+                                </div>
                                 <div
                                     class="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[0] -ml-3">
                                     <span
@@ -828,7 +851,8 @@
                         <div class="service-item-main block h-full px-8 pb-7 md:pt-12 pt-8">
                             <div
                                 class="icon bg-orange md:w-20 w-16 md:h-20 h-16 flex items-center justify-center rounded-2xl">
-                                <span class="heading4 text-white">01</span></div>
+                                <span class="heading4 text-white">01</span>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Consultation</div>
                             <div class="text-placehover mt-3">We understand your business requirements and goals, analyzing
                                 challenges and opportunities to devise an effective blockchain strategy.</div>
@@ -838,7 +862,8 @@
                         <div class="service-item-main block h-full px-8 pb-7 md:pt-12 pt-8">
                             <div
                                 class="icon bg-orange md:w-20 w-16 md:h-20 h-16 flex items-center justify-center rounded-2xl">
-                                <span class="heading4 text-white">02</span></div>
+                                <span class="heading4 text-white">02</span>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Planning and Strategy
                             </div>
                             <div class="text-placehover mt-3">We develop a tailored plan and roadmap, defining objectives,
@@ -849,7 +874,8 @@
                         <div class="service-item-main block h-full px-8 pb-7 md:pt-12 pt-8">
                             <div
                                 class="icon bg-orange md:w-20 w-16 md:h-20 h-16 flex items-center justify-center rounded-2xl">
-                                <span class="heading4 text-white">03</span></div>
+                                <span class="heading4 text-white">03</span>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Development
                             </div>
                             <div class="text-placehover mt-3">Our skilled team creates robust and scalable blockchain
@@ -860,7 +886,8 @@
                         <div class="service-item-main block h-full px-8 pb-7 md:pt-12 pt-8">
                             <div
                                 class="icon bg-orange md:w-20 w-16 md:h-20 h-16 flex items-center justify-center rounded-2xl">
-                                <span class="heading4 text-white">04</span></div>
+                                <span class="heading4 text-white">04</span>
+                            </div>
                             <div class="heading7 text-white hover:text-orange duration-300 mt-6">Deployment and Support
                             </div>
                             <div class="text-placehover mt-3">We deploy your blockchain solution securely, integrate it
@@ -924,8 +951,8 @@
                                 <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
                                         decoding="async" data-nimg="1" class="w-full h-full object-cover"
                                         style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-1.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-1.png&w=3840&q=75">
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-1.png&w=3840&q=75 1x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-1.png&w=3840&q=75">
                                 </div>
                             </div>
                         </div>
@@ -975,8 +1002,8 @@
                                 <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
                                         decoding="async" data-nimg="1" class="w-full h-full object-cover"
                                         style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-2.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-2.png&w=3840&q=75">
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-2.png&w=3840&q=75 1x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-2.png&w=3840&q=75">
                                 </div>
                             </div>
                         </div>
@@ -1026,8 +1053,8 @@
                                 <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
                                         decoding="async" data-nimg="1" class="w-full h-full object-cover"
                                         style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-3.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-3.png&w=3840&q=75">
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-3.png&w=3840&q=75 1x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-3.png&w=3840&q=75">
                                 </div>
                             </div>
                         </div>
@@ -1077,8 +1104,8 @@
                                 <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
                                         decoding="async" data-nimg="1" class="w-full h-full object-cover"
                                         style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-4.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fmember%2Favatar-testimonials6-4.png&w=3840&q=75">
+                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-4.png&w=3840&q=75 1x"
+                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-4.png&w=3840&q=75">
                                 </div>
                             </div>
                         </div>
@@ -1087,7 +1114,8 @@
                         class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
                         <span class="swiper-pagination-bullet"></span><span
                             class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
-                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1104,8 +1132,8 @@
                                     alt="Stock Market Trends Analyze Movements" loading="lazy" width="5000"
                                     height="5000" decoding="async" data-nimg="1" class="w-full h-full block"
                                     style="color:transparent"
-                                    srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fblog%2Fitem4.png&w=3840&q=75 1x"
-                                    src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fblog%2Fitem4.png&w=3840&q=75"></div>
+                                    srcset="/finatex-next.vercel.app/_next/images/blog/item4.png&w=3840&q=75 1x"
+                                    src="/finatex-next.vercel.app/_next/images/blog/item4.png&w=3840&q=75"></div>
                             <div class="heading6 mt-4">Stock Market Trends Analyze Movements</div>
                             <div class="date flex items-center gap-4 mt-3">
                                 <div class="author caption2 text-placehover">by <span class="text-white">Avitex<!-- -->
@@ -1124,8 +1152,8 @@
                                     alt="Estate Planning Secure Your Legacy" loading="lazy" width="5000"
                                     height="5000" decoding="async" data-nimg="1" class="w-full h-full block"
                                     style="color:transparent"
-                                    srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fblog%2Fitem5.png&w=3840&q=75 1x"
-                                    src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fblog%2Fitem5.png&w=3840&q=75"></div>
+                                    srcset="/finatex-next.vercel.app/_next/images/blog/item5.png&w=3840&q=75 1x"
+                                    src="/finatex-next.vercel.app/_next/images/blog/item5.png&w=3840&q=75"></div>
                             <div class="heading6 mt-4">Estate Planning Secure Your Legacy</div>
                             <div class="date flex items-center gap-4 mt-3">
                                 <div class="author caption2 text-placehover">by <span class="text-white">Avitex<!-- -->
@@ -1144,8 +1172,8 @@
                                     alt="Wealth Building Sustainable Growth" loading="lazy" width="5000"
                                     height="5000" decoding="async" data-nimg="1" class="w-full h-full block"
                                     style="color:transparent"
-                                    srcset="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fblog%2Fitem6.png&w=3840&q=75 1x"
-                                    src="/finatex-next.vercel.app/_next/image?url=%2Fimages%2Fblog%2Fitem6.png&w=3840&q=75"></div>
+                                    srcset="/finatex-next.vercel.app/_next/images/blog/item6.png&w=3840&q=75 1x"
+                                    src="/finatex-next.vercel.app/_next/images/blog/item6.png&w=3840&q=75"></div>
                             <div class="heading6 mt-4">Wealth Building Sustainable Growth</div>
                             <div class="date flex items-center gap-4 mt-3">
                                 <div class="author caption2 text-placehover">by <span class="text-white">Avitex<!-- -->
