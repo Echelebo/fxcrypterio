@@ -508,24 +508,6 @@
     <a href="https://wa.me/" target="_blank" class="fixed bottom-0 right-0 z-50 mb-5">
         <img src="/whatsapp.png" alt="" class="w-10 h-10 animated-image shadow mr-2">
     </a>
-
-    {{-- cookie consent --}}
-    <div class="w-full fixed z-50 bottom-0 left-0 hidden" id="cookie-consent">
-        <div class="w-full bg-purple-500 p-5">
-            <div class="w-full grid grid-cols-1 gap-3  md:flex space-x-2 justify-center items-center">
-                <p class="text-center">We use cookies to tailor your experience on {{ site('name') }}. Learn more in
-                    our <a href="{{ route('privacy') }}">privacy policy</a></p>
-                <div class="text-center">
-                    <a id="consented"
-                        class="ts-gray-3 rounded-full shadow border border-slate-800 hover:border-slate-600 cursor-pointer px-2 py-1 hover:scale-110 transition-all"
-                        role="button">
-                        <span>Accept Cookies</span>
-
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <script type="text/javascript">
@@ -565,88 +547,6 @@
             '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'
             .split('|'), 0, {}))
         /* ]]> */
-    </script>
-
-
-    {{-- all script placements --}}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    {{-- cookie --}}
-    <script>
-        function setCookie(cookieName, cookieValue) {
-            var expirationDate = new Date();
-            expirationDate.setFullYear(expirationDate.getFullYear() + 10); // Set expiration date to 10 years from now
-
-            var cookieString = cookieName + '=' + cookieValue + '; expires=' + expirationDate.toUTCString() + '; path=/';
-
-            document.cookie = cookieString;
-        }
-
-
-        $('#consented').on('click', function(e) {
-            e.preventDefault();
-            setCookie('cookie-consent', true);
-            $('#cookie-consent').addClass('hidden');
-        });
-    </script>
-
-    @yield('scripts')
-
-    @stack('scripts')
-
-    {{-- hide preloader --}}
-    <script>
-        window.onload = function() {
-            // Check if the "cookie-consent" cookie exists
-            if (!document.cookie.includes('cookie-consent')) {
-                $('#cookie-consent').removeClass('hidden');
-            }
-        };
-    </script>
-
-    {{-- mobile menu trigger --}}
-    <script>
-        var mobileMenu = $('#menu-mobile-block');
-        $(document).on('click', '.menu-humburger', function(e) {
-            e.preventDefault();
-            mobileMenu.toggleClass('hidden');
-        });
-
-        $(".close-btn").on("click", function(event) {
-            $(this).closest('#menu-mobile-block').hide();
-        });
-    </script>
-
-
-
-
-    {{-- fix and shrink header --}}
-    <script>
-        // scroll
-        window.addEventListener('scroll', function() {
-            const fixedHeader = document.getElementById('fixed-header');
-            const scrollPosition = window.scrollY;
-
-            // Adjust the scroll threshold according to your preference
-            const scrollThreshold = 100;
-
-            if (scrollPosition >= scrollThreshold) {
-                fixedHeader.classList.add('fixed');
-                fixedHeader.classList.add('z-40');
-                fixedHeader.classList.add('border-b');
-                fixedHeader.classList.add('border-slate-800');
-
-
-            } else {
-                fixedHeader.classList.remove('fixed');
-                fixedHeader.classList.remove('z-40');
-                fixedHeader.classList.remove('border-b');
-                fixedHeader.classList.remove('border-slate-800');
-
-
-            }
-
-        });
     </script>
 
     {{-- livechat --}}
