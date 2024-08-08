@@ -40,12 +40,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/gradient.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 
-    <link rel="stylesheet" href="/asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/asset/css/aos.css">
-    <link rel="stylesheet" href="/asset/css/all.min.css">
-
-    <link rel="stylesheet" href="/asset/css/swiper-bundle.min.css">
-
     <style type="text/css">
         .rfm-marquee-container {
             overflow-x: hidden;
@@ -576,16 +570,6 @@
         /* ]]> */
     </script>
 
-    <script src="/asset/js/bootstrap.bundle.min.js"></script>
-    <script src="/asset/js/all.min.js"></script>
-    <script src="/asset/js/swiper-bundle.min.js"></script>
-    <script src="/asset/js/aos.js"></script>
-    <script src="/asset/js/fslightbox.js"></script>
-    <script src="/asset/js/purecounter_vanilla.js"></script>
-
-
-
-    <script src="/asset/js/custom.js"></script>
 
     {{-- all script placements --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

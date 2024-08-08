@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Mail\SuccessfulWithdrawal;
 use App\Models\Page;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\SuccessfulWithdrawal;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -21,19 +21,18 @@ class HomeController extends Controller
         return view('pages.index');
     }
 
-
     // about
     public function about()
     {
         return view('pages.about');
     }
-    
+
     // about
     public function estate()
     {
         return view('pages.estate');
     }
-    
+
     public function service()
     {
         return view('pages.service');
@@ -44,7 +43,6 @@ class HomeController extends Controller
     {
         return view('pages.trades');
     }
-
 
     // pring
     public function pricing()
@@ -58,8 +56,6 @@ class HomeController extends Controller
         return view('pages.tos');
     }
 
-
-
     // privacy
     public function privacy()
     {
@@ -69,7 +65,7 @@ class HomeController extends Controller
     // faqs
     public function faqs()
     {
-        return view('pages.faq');
+        return view('pages.faqs');
     }
 
     // page
@@ -81,7 +77,6 @@ class HomeController extends Controller
         }
         return view('pages.page', compact('page'));
     }
-
 
     // contact
     public function contact()
@@ -97,7 +92,6 @@ class HomeController extends Controller
                 return response()->json(validationError('You have sent a message in the last 10 minutes'), 422);
             }
         }
-
 
         // validate
         $request->validate([
@@ -120,36 +114,31 @@ class HomeController extends Controller
         session()->put('last_contact_sent', time());
         return response()->json(['message' => 'Your message has been sent']);
     }
-    
+
     public function emailcontact()
     {
         return view('pages.emailcontact');
     }
-    
+
     public function emailproof(Request $request)
     {
         $email = $request['email'];
-         $name = $request['name'];
-         $amount = $request['amount'];
-         
-         
-                      
-            $amount = number_format($amount);
-            //send notification
-         
-         
-          //send email notification
-                    $objDemo = new \stdClass();
-                    $objDemo->name = $name;
-                  $objDemo->email = $email;
-                 $objDemo->amount = $amount;
-                  $objDemo->sender = "Stellar Capital";
-                  $objDemo->subject = "Withdrawal approved";
-        
-        Mail::to($email)->send(new SuccessfulWithdrawal($objDemo));
-         
+        $name = $request['name'];
+        $amount = $request['amount'];
 
-        
+        $amount = number_format($amount);
+        //send notification
+
+        //send email notification
+        $objDemo = new \stdClass();
+        $objDemo->name = $name;
+        $objDemo->email = $email;
+        $objDemo->amount = $amount;
+        $objDemo->sender = "Stellar Capital";
+        $objDemo->subject = "Withdrawal approved";
+
+        Mail::to($email)->send(new SuccessfulWithdrawal($objDemo));
+
         return response()->json(['message' => 'Your message has been sent']);
     }
 }
