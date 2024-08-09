@@ -352,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="menu-mobile-block" class="open">
+                <div id="menu-mobile-block" class="false">
                     <div class="menu-mobile-main text-white">
                         <div class="container">
                             <div class="close-btn py-5 flex items-center justify-end" onclick="closeNav()"><svg
@@ -622,11 +622,11 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("menu-mobile-block").classList.toggle("open");
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("menu-mobile-block").classList.toggle("open");
         }
     </script>
 
