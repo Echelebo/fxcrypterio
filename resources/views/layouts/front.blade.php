@@ -37,6 +37,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
+    <link rel="stylesheet" href="{{ asset('assets/css/gradient.css') }}">
+
+
     <style type="text/css">
         .rfm-marquee-container {
             overflow-x: hidden;
