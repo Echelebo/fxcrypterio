@@ -37,7 +37,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
@@ -352,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="menu-mobile-block" class="open">
+                <div id="menu-mobile-block" class="false">
                     <div class="menu-mobile-main text-white">
                         <div class="container">
                             <div class="close-btn py-5 flex items-center justify-end" onclick="closeNav()"><svg
