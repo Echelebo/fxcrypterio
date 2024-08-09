@@ -146,7 +146,7 @@
                     <div class="right-block flex items-center gap-5">
                         <div class="select-block relative">
                             <select onchange="doGTranslate(this);"
-                                class="border-none outline-none bg-dark text-white p-2 caption2">
+                                class="border-none outline-none bg-white text-dark p-2 caption2">
                                 <option value="">Language</option>
                                 <option value="en|af">Afrikaans</option>
                                 <option value="en|sq">Albanian</option>
