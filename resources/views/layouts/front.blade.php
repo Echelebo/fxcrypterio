@@ -352,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="menu-mobile-block" class="false">
+                <div id="menu-mobile-block" class="open">
                     <div class="menu-mobile-main text-white">
                         <div class="container">
                             <div class="close-btn py-5 flex items-center justify-end" onclick="closeNav()"><svg
