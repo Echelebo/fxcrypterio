@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/gradient.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/fonts.css') }}">
+
 {{-- material icon cdn --}}
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 

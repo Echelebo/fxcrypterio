@@ -31,17 +31,17 @@
                                     </span></div>
                                 <div class="relative overflow-hidden"><span
                                         class="block text-white relative overflow-hidden">Blockchain with
-                                        Finatex</span><span
+                                        {{ site('name') }}</span><span
                                         class="block text-white absolute top-0 left-0 w-full h-full">Blockchain with
-                                        Finatex</span></div>
+                                        {{ site('name') }}</span></div>
                             </div>
                             <div class="body2 md:mt-6 mt-4 text-white xl:w-1/2 sm:w-2/3 w-full">Our platform offers you the
-                                flexibility to manage your finances on-the-go. Whether you're at home, at work, or on the
-                                move, you can easily check your account balances, transfer funds, pay bills, and more with
+                                flexibility to manage your cryptocurrency on-the-go. Whether you're at home, at work, or on
+                                the move, you can easily make use out of your cryptocurrency, trade crypto, and more with
                                 just a few clicks.</div>
                             <div class="button-block md:mt-7 mt-5"><a
                                     class="button-main bg-orange text-white hover:bg-white hover:text-black rounded-full"
-                                    href="/service/service-one">Get Started</a></div>
+                                    href="{{ route('user.register') }}">Get Started</a></div>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,8 @@
         <div class="count-number-block style-six">
             <div class="container flex items-center justify-center">
                 <div class="lg:w-5/6 w-full">
-                    <div class="capitalize text-white text-center text-2xl font-medium lg:mt-10 mt-7">Finatex is a leading
+                    <div class="capitalize text-white text-center text-2xl font-medium lg:mt-10 mt-7">{{ site('name') }}
+                        is a leading
                         blockchain platform that provides cutting-edge solutions for businesses and individuals seeking to
                         leverage the power of blockchain technology. </div>
                     <div class="grid xl:grid-cols-4 grid-cols-2 gap-y-8 lg:mt-10 mt-7">
@@ -261,78 +262,73 @@
         <div class="service-block style-six lg:pt-[100px] sm:pt-16 pt-10">
             <div class="container flex flex-col items-center">
                 <div class="heading3 lg:w-7/12 text-white text-center">Our services</div>
-                <div class="body3 text-surface text-center mt-6 w-full lg:w-1/2 sm:w-2/3">This is simply dummy text
-                    printing and typesetting industry been industry's. This is simply dummy text been industry.<a
+                <div class="body3 text-surface text-center mt-6 w-full lg:w-1/2 sm:w-2/3">We offer the best services around
+                    - from trading to market analysis, Data-Driven Triumph, and more! <a
                         class="text-button duration-300 underline ml-2 text-white hover:text-orange"
-                        href="/service/service-one">View case</a></div>
+                        href="{{ route('service') }}">View case</a></div>
                 <div class="list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-10 gap-y-20 mt-20">
                     <div class="service-item rounded-2xl border border-line hover-box-shadow"><a
-                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10"
-                            href="/service/service-detail/blockchain-development">
+                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10" href="{{ route('service') }}">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-pc-code text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Development
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Trading
                             </div>
                             <div class="text-placehover mt-3">Experience the excitement and potential of the cryptocurrency
                                 market with our expert trading services.</div>
                         </a></div>
                     <div class="service-item rounded-2xl border border-line hover-box-shadow"><a
-                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10"
-                            href="/service/service-detail/smart-contract-development">
+                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10" href="{{ route('service') }}">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-code text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Smart Contract Development
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Smart Contract
                             </div>
                             <div class="text-placehover mt-3">We analyze market trends, manage risks, and optimize your
                                 portfolio to maximize returns and achieve your financial goals.</div>
                         </a></div>
                     <div class="service-item rounded-2xl border border-line hover-box-shadow"><a
-                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10"
-                            href="/service/service-detail/blockchain-integration">
+                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10" href="{{ route('service') }}">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-lamp-gear text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Integration
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Easy Integration
                             </div>
                             <div class="text-placehover mt-3">Our team of experienced advisors will guide you in making
                                 informed investment, whether you're a beginner trader.</div>
                         </a></div>
                     <div class="service-item rounded-2xl border border-line hover-box-shadow"><a
-                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10"
-                            href="/service/service-detail/blockchain-consulting">
+                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10" href="{{ route('service') }}">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-text-pen text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Consulting
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Finance Management
                             </div>
                             <div class="text-placehover mt-3">We employ industry-leading tools and techniques to protect
                                 your investments and minimize potential losses.</div>
                         </a></div>
                     <div class="service-item rounded-2xl border border-line hover-box-shadow"><a
-                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10"
-                            href="/service/service-detail/ico/sto-development">
+                            class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10" href="{{ route('service') }}">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-chart text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">ICO/STO Development</div>
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Markets Update</div>
                             <div class="text-placehover mt-3">We provide timely reports, market updates, and data-driven
                                 insights to help you make informed trading decisions.</div>
                         </a></div>
                     <div class="service-item rounded-2xl border border-line hover-box-shadow"><a
                             class="service-item-main block h-full px-8 pb-7 md:pt-14 pt-10"
-                            href="/service/service-detail/wallet-development">
+                            href="{{ route('service') }}">
                             <div
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-vali text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Wallet Development</div>
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Strategic Consulting</div>
                             <div class="text-placehover mt-3">Expand your knowledge and skills in cryptocurrency trading
                                 through our educational resources.</div>
                         </a></div>
@@ -350,11 +346,13 @@
                     </div>
                     <div class="w-full xl:w-5/12 lg:w-1/2">
                         <div class="text-button-uppercase text-orange">People Trust Us</div>
-                        <div class="heading3 text-white mt-3">The #1 blockchain company in the Asian</div>
-                        <div class="body1 text-placehover mt-10">At Finatex, we're passionate about helping freelancers
-                            succeed in today's competitive digital landscape. With years of experience in the industry, we
-                            understand the unique challenges & opportunities that freelancers face when it comes to SEO
-                            and digital marketing.</div>
+                        <div class="heading3 text-white mt-3">The #1 blockchain firm</div>
+                        <div class="body1 text-placehover mt-10">At {{ site('name') }}, we're passionate about helping
+                            investors
+                            succeed in today's competitive crypto landscape. With years of experience in the industry, we
+                            understand the unique challenges & opportunities that cryptocurrency traders face when it comes
+                            to making profit
+                            and exploring leverage.</div>
                         <div class="flex items-center gap-4 mt-9">
                             <div class="flex items-center">
                                 <div
@@ -395,10 +393,10 @@
                                 <div
                                     class="img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[0] -ml-3">
                                     <span
-                                        class="w-full h-full flex items-center justify-center bg-white rounded-full text-button">5M</span>
+                                        class="w-full h-full flex items-center justify-center bg-white rounded-full text-button">1M</span>
                                 </div>
                             </div>
-                            <div class="text-button text-white">Trusted by 50M+ People around <br
+                            <div class="text-button text-white">Trusted by 3M+ People around <br
                                     class="max-xl:hidden max-lg:block max-[400px]:hidden"> the globe</div>
                         </div>
                     </div>
@@ -414,12 +412,7 @@
                             <div class="lg:text-center heading3 text-white mt-3">Choose The <span class="text-orange">Plan
                                     & Pricing</span></div>
                         </div>
-                        <div class="choose-type flex items-center gap-3">
-                            <div class="switch ">
-                                <div class="bg-placehover"></div>
-                            </div>
-                            <div class="text-white">Annual pricing (save 20%)</div>
-                        </div>
+
                     </div>
                     <div class="list-pricing show lg:mt-[60px] mt-10">
                         <div class="flex max-lg:flex-wrap gap-8">
@@ -635,218 +628,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="list-pricing-year hide lg:mt-[60px] mt-10">
-                        <div class="flex max-lg:flex-wrap gap-8">
-                            <div class="w-full lg:w-1/3">
-                                <div class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow">
-                                    <div class="heading7 text-orange text-center">Standard</div>
-                                    <div class="price text-center justify-center flex items-end gap-2 mt-3">
-                                        <div class="heading2">$300</div>
-                                        <div class="body3">/month</div>
-                                    </div>
-                                    <div class="text-center text-white mt-3">Billed annually.</div>
-                                    <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">20,000+ of PNG & SVG graphics</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Access to 100 million stock images</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Upload custom icons and fonts</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Unlimited Sharing</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Upload graphics & video in up to 4k</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Unlimited Projects</div>
-                                        </div>
-                                    </div>
-                                    <div class="button-block w-full mt-6"><a
-                                            class="button-main text-center block hover:text-white hover:bg-orange bg-white border border-orange text-black text-button w-full py-3"
-                                            href="/pages/pricing">Get Started</a></div>
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-1/3">
-                                <div
-                                    class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow duration-500">
-                                    <div class="heading7 text-orange text-center">Primeum</div>
-                                    <div class="price text-center justify-center flex items-end gap-2 mt-3">
-                                        <div class="heading2">$500</div>
-                                        <div class="body3">/month</div>
-                                    </div>
-                                    <div class="text-center text-white mt-3">Billed annually.</div>
-                                    <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">20,000+ of PNG & SVG graphics</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Access to 100 million stock images</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Upload custom icons and fonts</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Unlimited Sharing</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Upload graphics & video in up to 4k</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Unlimited Projects</div>
-                                        </div>
-                                    </div>
-                                    <div class="button-block w-full mt-6"><a
-                                            class="button-main text-center block hover-button-black bg-white text-black border border-orange hover:text-white hover:bg-orange text-button w-full py-3"
-                                            href="/pages/pricing">Get Started</a></div>
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-1/3">
-                                <div class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow">
-                                    <div class="heading7 text-orange text-center">Enterprise</div>
-                                    <div class="price text-center justify-center flex items-end gap-2 mt-3">
-                                        <div class="heading2">$800</div>
-                                        <div class="body3">/month</div>
-                                    </div>
-                                    <div class="text-center text-white mt-3">Billed annually.</div>
-                                    <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">20,000+ of PNG & SVG graphics</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Access to 100 million stock images</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Upload custom icons and fonts</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Unlimited Sharing</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Upload graphics & video in up to 4k</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Unlimited Projects</div>
-                                        </div>
-                                    </div>
-                                    <div class="button-block w-full mt-6"><a
-                                            class="button-main text-center block hover:text-white hover:bg-orange bg-white border border-orange text-black text-button w-full py-3"
-                                            href="/pages/pricing">Get Started</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -909,306 +690,16 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial-block style-three style-six our-project-block">
-            <div class="container">
-                <div class="heading3 text-center">Our Testimonials</div>
-            </div>
-            <div class="list-testimonial list-project lg:mt-10 mt-7">
-                <div class="swiper swiper-initialized swiper-horizontal h-full relative swiper-backface-hidden">
-                    <div class="swiper-wrapper"
-                        style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(-640px, 0px, 0px);">
-                        <div class="swiper-slide swiper-slide-prev" style="width: 624px; margin-right: 16px;">
-                            <div class="item flex max-sm:flex-col-reverse">
-                                <div class="sm:w-7/12">
-                                    <div
-                                        class="comment-item style-six lg:py-[72px] lg:px-[60px] sm:py-12 sm:px-10 p-8 rounded-2xl block">
-                                        <div class="flex flex-col justify-between h-full">
-                                            <div class="icon mb-4"><i class="icon-quotes text-6xl"></i></div>
-                                            <div class="rate flex"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#9FA09C" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg></div>
-                                            <div class="heading6 text-white mt-4">"I'm extremely satisfied with your
-                                                services! Your meticulous financial planning helped me manage my assets
-                                                efficiently and achieve my financial goals."</div>
-                                            <div class="infor mt-5">
-                                                <div class="text-button text-white">De Rossi</div>
-                                                <div class="caption1 text-placehover mt-1">CEO, Hivelab Agency</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
-                                        decoding="async" data-nimg="1" class="w-full h-full object-cover"
-                                        style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-1.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-1.png&w=3840&q=75">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-active" style="width: 624px; margin-right: 16px;">
-                            <div class="item flex max-sm:flex-col-reverse">
-                                <div class="sm:w-7/12">
-                                    <div
-                                        class="comment-item style-six lg:py-[72px] lg:px-[60px] sm:py-12 sm:px-10 p-8 rounded-2xl block">
-                                        <div class="flex flex-col justify-between h-full">
-                                            <div class="icon mb-4"><i class="icon-quotes text-6xl"></i></div>
-                                            <div class="rate flex"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg></div>
-                                            <div class="heading6 text-white mt-4">"I highly value and appreciate your
-                                                services and the attention to detail you provide in crafting financial
-                                                plans. Thank you for helping financial future!"</div>
-                                            <div class="infor mt-5">
-                                                <div class="text-button text-white">Benjamin</div>
-                                                <div class="caption1 text-placehover mt-1">Chariman, Avitex Inc</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
-                                        decoding="async" data-nimg="1" class="w-full h-full object-cover"
-                                        style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-2.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-2.png&w=3840&q=75">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-next" style="width: 624px; margin-right: 16px;">
-                            <div class="item flex max-sm:flex-col-reverse">
-                                <div class="sm:w-7/12">
-                                    <div
-                                        class="comment-item style-six lg:py-[72px] lg:px-[60px] sm:py-12 sm:px-10 p-8 rounded-2xl block">
-                                        <div class="flex flex-col justify-between h-full">
-                                            <div class="icon mb-4"><i class="icon-quotes text-6xl"></i></div>
-                                            <div class="rate flex"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg></div>
-                                            <div class="heading6 text-white mt-4">"Your personalized approach and care have
-                                                improved my financial planning. I highly value your services and attention
-                                                to detail in crafting financial plans."</div>
-                                            <div class="infor mt-5">
-                                                <div class="text-button text-white">Alexander</div>
-                                                <div class="caption1 text-placehover mt-1">Designer, ThreeS Corp</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
-                                        decoding="async" data-nimg="1" class="w-full h-full object-cover"
-                                        style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-3.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-3.png&w=3840&q=75">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" style="width: 624px; margin-right: 16px;">
-                            <div class="item flex max-sm:flex-col-reverse">
-                                <div class="sm:w-7/12">
-                                    <div
-                                        class="comment-item style-six lg:py-[72px] lg:px-[60px] sm:py-12 sm:px-10 p-8 rounded-2xl block">
-                                        <div class="flex flex-col justify-between h-full">
-                                            <div class="icon mb-4"><i class="icon-quotes text-6xl"></i></div>
-                                            <div class="rate flex"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                    height="20" fill="#FDD33F" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
-                                                    </path>
-                                                </svg></div>
-                                            <div class="heading6 text-white mt-4">"I highly value and appreciate your
-                                                services and the attention to detail you provide in crafting financial
-                                                plans. Thank you for helping financial future!"</div>
-                                            <div class="infor mt-5">
-                                                <div class="text-button text-white">Christina</div>
-                                                <div class="caption1 text-placehover mt-1">CEO, Texas Instruments</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sm:w-5/12"><img alt="" loading="lazy" width="5000" height="4000"
-                                        decoding="async" data-nimg="1" class="w-full h-full object-cover"
-                                        style="color:transparent"
-                                        srcset="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-4.png&w=3840&q=75 1x"
-                                        src="/finatex-next.vercel.app/_next/images/member/avatar-testimonials6-4.png&w=3840&q=75">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                        <span class="swiper-pagination-bullet"></span><span
-                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
-                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="list-blog three-col text-white style-six lg:py-[100px] sm:py-16 py-10">
-            <div class="container">
-                <div class="heading flex items-center justify-between">
-                    <h3 class="heading3">Latest News</h3><a class="text-button underline hover:text-orange duration-300"
-                        href="/blog/blog-list-one">View All</a>
-                </div>
-                <div class="list grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:mt-10 mt-6"><a class="blog-item block"
-                        href="/blog/blog-detail-one/stock-market-trends-analyze-movements">
-                        <div class="w-full">
-                            <div class="bg-img w-full overflow-hidden rounded-xl"><img
-                                    alt="Stock Market Trends Analyze Movements" loading="lazy" width="5000"
-                                    height="5000" decoding="async" data-nimg="1" class="w-full h-full block"
-                                    style="color:transparent"
-                                    srcset="/finatex-next.vercel.app/_next/images/blog/item4.png&w=3840&q=75 1x"
-                                    src="/finatex-next.vercel.app/_next/images/blog/item4.png&w=3840&q=75"></div>
-                            <div class="heading6 mt-4">Stock Market Trends Analyze Movements</div>
-                            <div class="date flex items-center gap-4 mt-3">
-                                <div class="author caption2 text-placehover">by <span class="text-white">Avitex<!-- -->
-                                    </span></div>
-                                <div class="item-date flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256">
-                                        <path
-                                            d="M208,28H188V24a12,12,0,0,0-24,0v4H92V24a12,12,0,0,0-24,0v4H48A20,20,0,0,0,28,48V208a20,20,0,0,0,20,20H208a20,20,0,0,0,20-20V48A20,20,0,0,0,208,28ZM68,52a12,12,0,0,0,24,0h72a12,12,0,0,0,24,0h16V76H52V52ZM52,204V100H204V204Z">
-                                        </path>
-                                    </svg><span class="ml-1 caption2">2 days ago</span></div>
-                            </div>
-                        </div>
-                    </a><a class="blog-item block" href="/blog/blog-detail-one/estate-planning-secure-your-legacy">
-                        <div class="w-full">
-                            <div class="bg-img w-full overflow-hidden rounded-xl"><img
-                                    alt="Estate Planning Secure Your Legacy" loading="lazy" width="5000"
-                                    height="5000" decoding="async" data-nimg="1" class="w-full h-full block"
-                                    style="color:transparent"
-                                    srcset="/finatex-next.vercel.app/_next/images/blog/item5.png&w=3840&q=75 1x"
-                                    src="/finatex-next.vercel.app/_next/images/blog/item5.png&w=3840&q=75"></div>
-                            <div class="heading6 mt-4">Estate Planning Secure Your Legacy</div>
-                            <div class="date flex items-center gap-4 mt-3">
-                                <div class="author caption2 text-placehover">by <span class="text-white">Avitex<!-- -->
-                                    </span></div>
-                                <div class="item-date flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256">
-                                        <path
-                                            d="M208,28H188V24a12,12,0,0,0-24,0v4H92V24a12,12,0,0,0-24,0v4H48A20,20,0,0,0,28,48V208a20,20,0,0,0,20,20H208a20,20,0,0,0,20-20V48A20,20,0,0,0,208,28ZM68,52a12,12,0,0,0,24,0h72a12,12,0,0,0,24,0h16V76H52V52ZM52,204V100H204V204Z">
-                                        </path>
-                                    </svg><span class="ml-1 caption2">2 days ago</span></div>
-                            </div>
-                        </div>
-                    </a><a class="blog-item block" href="/blog/blog-detail-one/wealth-building-sustainable-growth">
-                        <div class="w-full">
-                            <div class="bg-img w-full overflow-hidden rounded-xl"><img
-                                    alt="Wealth Building Sustainable Growth" loading="lazy" width="5000"
-                                    height="5000" decoding="async" data-nimg="1" class="w-full h-full block"
-                                    style="color:transparent"
-                                    srcset="/finatex-next.vercel.app/_next/images/blog/item6.png&w=3840&q=75 1x"
-                                    src="/finatex-next.vercel.app/_next/images/blog/item6.png&w=3840&q=75"></div>
-                            <div class="heading6 mt-4">Wealth Building Sustainable Growth</div>
-                            <div class="date flex items-center gap-4 mt-3">
-                                <div class="author caption2 text-placehover">by <span class="text-white">Avitex<!-- -->
-                                    </span></div>
-                                <div class="item-date flex items-center"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256">
-                                        <path
-                                            d="M208,28H188V24a12,12,0,0,0-24,0v4H92V24a12,12,0,0,0-24,0v4H48A20,20,0,0,0,28,48V208a20,20,0,0,0,20,20H208a20,20,0,0,0,20-20V48A20,20,0,0,0,208,28ZM68,52a12,12,0,0,0,24,0h72a12,12,0,0,0,24,0h16V76H52V52ZM52,204V100H204V204Z">
-                                        </path>
-                                    </svg><span class="ml-1 caption2">2 days ago</span></div>
-                            </div>
-                        </div>
-                    </a></div>
-            </div>
-        </section>
+
+
         <div class="form-request-block style-two style-six relative"
             style="background-image:url('/finatex-next.vercel.app/images/cta/bg-cta6.png')">
             <div class="container h-full py-[60px]">
                 <div class="flex max-lg:flex-col lg:items-center justify-between gap-8 h-full">
                     <div class="lg:w-1/2">
                         <div class="heading2 text-white">Let’s build<br>future together</div>
-                        <div class="caption1 text-surface mt-4">Job Searching Just Got Easy. Use Jobtex to run a hiring
-                            site and earn<br>money in the process!</div>
+                        <div class="caption1 text-surface mt-4">Cryptocurrency Trading Just Got Easy. Refer your friends
+                            and colleagues, earn<br>money in the process!</div>
                     </div>
                     <div class="lg:w-1/2">
                         <form class="form-block rounded-xl bg-white p-7 flex flex-col justify-between gap-5">
