@@ -119,6 +119,51 @@
             transform: var(--transform);
         }
     </style>
+
+    <style>
+        .fixed {
+            position: fixed;
+        }
+
+        .bottom-0 {
+            bottom: 0px;
+        }
+
+        .right-0 {
+            right: 0px;
+        }
+
+        .z-50 {
+            z-index: 50;
+        }
+
+        .mb-5 {
+            margin-bottom: 1.25rem;
+        }
+
+        .w-10 {
+            width: 2.5rem;
+        }
+
+        .h-10 {
+            height: 2.5rem;
+        }
+
+        .animated-image {
+            animation: growAnimation 3s infinite;
+
+        }
+
+        .shadow {
+            --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem;
+        }
+    </style>
 </head>
 
 <body class="__className_aaf875" data-new-gr-c-s-check-loaded="14.1190.0" data-gr-ext-installed="">
@@ -523,6 +568,8 @@
 
 
     </div>
+
+
 
     <script type="text/javascript">
         function googleTranslateElementInit2() {

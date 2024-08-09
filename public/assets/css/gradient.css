@@ -1,11 +1,11 @@
 .ts-gradient-dark {
     /* you can also check this gradient out */
     /* background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 66%, rgba(85,136,217,1) 92%, rgba(121,242,236,1) 100%); */
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 66%, rgba(40,104,216,1) 92%, rgba(23,204,241,1) 100%); */
 
 
     background: rgb(0, 0, 0);
-    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(46, 124, 101, 1) 89%, rgba(96, 146, 227, 1) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(23, 204, 241, 1) 89%, rgba(40, 104, 216, 1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1160,16 +1160,16 @@ textarea:-webkit-autofill:active {
 
     50% {
         transform: scale(1.2);
-        
+
     }
 
     100% {
         transform: scale(1);
-        
+
     }
 }
 
 .animated-image {
     animation: growAnimation 3s infinite;
-   
+
 }
