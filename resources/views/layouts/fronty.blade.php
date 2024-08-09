@@ -644,10 +644,16 @@
             var popup = document.querySelector(".modal-video-main"); // the popup div
             var target = event.target; // the clicked element
 
-            // Check if the clicked element is outside the popup
-            if (!popup.contains(target)) {
-                document.querySelector(".modal-video-main").classList.remove("open"); // change the class
+            if (popup.classList.contains('open')) {
+                // The div has the class 'open'
+
+                // Check if the clicked element is outside the popup
+                if (!popup.contains(target)) {
+                    popup.classList.remove("open"); // change the class
+                }
+
             }
+
         });
     </script>
 
