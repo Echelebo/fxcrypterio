@@ -641,17 +641,6 @@
         }
     </script>
 
-    <script>
-        // Get the modal
-        var modal = document.querySelector(".modal-video-block");
-
-        window.onclick = function(event) {
-            if (event.target !== modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
     <script src="/code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous">
     </script>
