@@ -37,8 +37,8 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/gradient.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 
     <style type="text/css">
         .rfm-marquee-container {
