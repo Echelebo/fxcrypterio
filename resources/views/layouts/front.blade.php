@@ -408,6 +408,13 @@
                                         </span></a>
 
                                 </li>
+
+                                <li
+                                    class="nav-item-mobile h-full flex-column gap-2 pt-4 pb-2 pl-3 pr-3 pointer contact ">
+                                    <a class="button-main bg-orange text-white rounded-full hover:bg-black"
+                                        href="{{ route('user.login') }}">Member Area</a>
+
+                                </li>
                             </ul>
                         </div>
                     </div>

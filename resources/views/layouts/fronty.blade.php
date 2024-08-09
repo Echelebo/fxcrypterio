@@ -38,6 +38,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
     <style type="text/css">
         .rfm-marquee-container {
             overflow-x: hidden;
@@ -134,6 +138,10 @@
             right: 0px;
         }
 
+        .left-0 {
+            left: 0px;
+        }
+
         .z-50 {
             z-index: 50;
         }
@@ -165,6 +173,7 @@
             margin-right: 0.5rem;
         }
     </style>
+
 </head>
 
 <body class="__className_aaf875" data-new-gr-c-s-check-loaded="14.1190.0" data-gr-ext-installed="">
@@ -192,7 +201,7 @@
                     <div class="right-block flex items-center gap-5">
                         <div class="select-block relative">
                             <select onchange="doGTranslate(this);"
-                                class="border-none outline-none bg-dark text-white p-2 caption2">
+                                class="border-none outline-none bg-white text-dark p-2 caption2">
                                 <option value="">Language</option>
                                 <option value="en|af">Afrikaans</option>
                                 <option value="en|sq">Albanian</option>
@@ -332,9 +341,9 @@
                             <div class="menu-right-block flex items-center"><a
                                     class="max-lg:hidden button-main bg-orange text-white rounded-full hover:bg-black"
                                     href="{{ route('user.register') }}">Get Started</a>
-                                <div class="menu-humburger hidden pointer"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                        class="text-2xl text-white">
+                                <div class="menu-humburger hidden pointer" onclick="openNav()"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        fill="currentColor" viewBox="0 0 256 256" class="text-2xl text-white">
                                         <path
                                             d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z">
                                         </path>
@@ -346,7 +355,7 @@
                 <div id="menu-mobile-block" class="false">
                     <div class="menu-mobile-main text-white">
                         <div class="container">
-                            <div class="close-btn py-5 flex items-center justify-end"><svg
+                            <div class="close-btn py-5 flex items-center justify-end" onclick="closeNav()"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                                     fill="currentColor" viewBox="0 0 256 256" class="text-white text-2xl">
                                     <path
@@ -397,6 +406,13 @@
                                     <a class="nav-link-mobile flex items-center justify-between"
                                         href="{{ route('contact') }}"><span class="body2 font-semibold">Contact
                                         </span></a>
+
+                                </li>
+
+                                <li
+                                    class="nav-item-mobile h-full flex-column gap-2 pt-4 pb-2 pl-3 pr-3 pointer contact ">
+                                    <a class="button-main bg-orange text-white rounded-full hover:bg-black"
+                                        href="{{ route('user.login') }}">Member Area</a>
 
                                 </li>
                             </ul>
@@ -563,12 +579,14 @@
                 </div>
             </div>
         </footer>
-        <a href="https://wa.me/31685018131" target="_blank" class="fixed bottom-0 right-0 z-50 mb-5">
+        <a href="https://wa.me/31685018131" target="_blank" class="fixed bottom-0 left-0 z-50 mb-5">
             <img src="/whatsapp.png" alt="" class="w-10 h-10 animated-image shadow mr-2">
         </a>
 
 
     </div>
+
+
 
     <script type="text/javascript">
         function googleTranslateElementInit2() {
@@ -608,6 +626,21 @@
             .split('|'), 0, {}))
         /* ]]> */
     </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("menu-mobile-block").classList.toggle("open");
+        }
+
+        function closeNav() {
+            document.getElementById("menu-mobile-block").classList.toggle("open");
+        }
+    </script>
+
+    <script src="/code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous">
+    </script>
+
 
     {{-- livechat --}}
     {!! json_decode(site('livechat')) !!}
