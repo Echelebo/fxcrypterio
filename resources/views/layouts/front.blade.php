@@ -639,22 +639,17 @@
         function openVideo() {
             document.querySelector(".modal-video-main").classList.toggle("open");
         }
+    </script>
 
-        document.addEventListener('click', function(event) {
-            var popup = document.querySelector(".modal-video-main"); // the popup div
-            var target = event.target; // the clicked element
+    <script>
+        // Get the modal
+        var modal = document.querySelector(".modal-video-block");
 
-            if (popup.classList.contains('open')) {
-                // The div has the class 'open'
-
-                // Check if the clicked element is outside the popup
-                if (!popup.contains(target)) {
-                    popup.classList.remove("open"); // change the class
-                }
-
+        window.onclick = function(event) {
+            if (event.target !== modal) {
+                modal.style.display = "none";
             }
-
-        });
+        }
     </script>
 
     <script src="/code.jquery.com/jquery-3.5.1.min.js"

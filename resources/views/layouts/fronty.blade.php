@@ -639,22 +639,6 @@
         function openVideo() {
             document.querySelector(".modal-video-main").classList.toggle("open");
         }
-
-        document.addEventListener('click', function(event) {
-            var popup = document.querySelector(".modal-video-main"); // the popup div
-            var target = event.target; // the clicked element
-
-            if (popup.classList.contains('open')) {
-                // The div has the class 'open'
-
-                // Check if the clicked element is outside the popup
-                if (!popup.contains(target)) {
-                    popup.classList.remove("open"); // change the class
-                }
-
-            }
-
-        });
     </script>
 
     <script src="/code.jquery.com/jquery-3.5.1.min.js"
