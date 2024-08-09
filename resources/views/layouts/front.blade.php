@@ -640,12 +640,15 @@
             document.querySelector(".modal-video-main").classList.toggle("open");
         }
 
-        window.onclick = function(event) {
-            var modal = document.querySelector(".modal-video-main");
-            if (event.target == modal) {
-                modal.style.display = "none"; // or use modal.close();
+        document.addEventListener('click', function(event) {
+            var popup = document.querySelector(".modal-video-main"); // the popup div
+            var target = event.target; // the clicked element
+
+            // Check if the clicked element is outside the popup
+            if (!popup.contains(target)) {
+                document.querySelector(".modal-video-main").classList.remove("open"); // change the class
             }
-        };
+        });
     </script>
 
     <script src="/code.jquery.com/jquery-3.5.1.min.js"
