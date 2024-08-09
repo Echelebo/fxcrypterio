@@ -639,6 +639,13 @@
         function openVideo() {
             document.querySelector(".modal-video-main").classList.toggle("open");
         }
+
+        window.onclick = function(event) {
+            var modal = document.querySelector(".modal-video-main");
+            if (event.target == modal) {
+                modal.style.display = "none"; // or use modal.close();
+            }
+        };
     </script>
 
     <script src="/code.jquery.com/jquery-3.5.1.min.js"
