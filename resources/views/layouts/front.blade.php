@@ -199,7 +199,7 @@
                             </svg><span class="ml-2 caption1 text-white">{{ site('email') }}</span></div>
                     </div>
                     <div class="right-block flex items-center gap-5">
-                        <div class="select-block-x relative" style="background-color: #ffffff; color: #333333;">
+                        <div class="select-block relative" style="background-color: #ffffff; color: #333333;">
                             <select onchange="doGTranslate(this);"
                                 class="border-none outline-none text-white p-2 caption2">
                                 <option value="">Language</option>
