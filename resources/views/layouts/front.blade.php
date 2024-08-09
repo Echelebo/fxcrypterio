@@ -562,7 +562,7 @@
                 </div>
             </div>
         </footer>
-        <a href="https://wa.me/" target="_blank" class="fixed bottom-0 right-0 z-50 mb-5">
+        <a href="https://wa.me/31685018131" target="_blank" class="fixed bottom-0 right-0 z-50 mb-5">
             <img src="/whatsapp.png" alt="" class="w-10 h-10 animated-image shadow mr-2">
         </a>
 
