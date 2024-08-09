@@ -641,6 +641,18 @@
         }
     </script>
 
+    <script>
+        // Get the modal
+        var modal = document.querySelector(".modal-video-main");
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.classList.toggle("open");
+            }
+        }
+    </script>
+
     <script src="/code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous">
     </script>
