@@ -484,9 +484,9 @@
                     src="/finatex-next.vercel.app/_next/images/cta/bg-cta1.png&w=3840&q=75" style="color: transparent;">
             </div>
             <div class="container flex items-center justify-between max-lg:flex-col max-lg:justify-center gap-6 h-full">
-                <div class="heading5 max-lg:text-center text-white">Looking for a first-class business consultant?</div><a
+                <div class="heading5 max-lg:text-center text-white">Looking for a first-class cryptocurrency consultant?</div><a
                     class="button-main rounded-full hover:bg-black hover:text-white bg-white text-button px-9 py-3"
-                    href="/contact/contact-two">Get A Quote</a>
+                    href="{{ route('user.login') }}">Member Login</a>
             </div>
         </div>
     </main>

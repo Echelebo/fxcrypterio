@@ -262,8 +262,8 @@
         <div class="service-block style-six lg:pt-[100px] sm:pt-16 pt-10">
             <div class="container flex flex-col items-center">
                 <div class="heading3 lg:w-7/12 text-white text-center">Our services</div>
-                <div class="body3 text-surface text-center mt-6 w-full lg:w-1/2 sm:w-2/3">We offer the best services around
-                    - from trading to market analysis, Data-Driven Triumph, and more! <a
+                <div class="body3 text-surface text-center mt-6 w-full lg:w-1/2 sm:w-2/3">Customized cryptocurrency services designed to meet
+                    your unique needs and drive your financial success <a
                         class="text-button duration-300 underline ml-2 text-white hover:text-orange"
                         href="{{ route('service') }}">View case</a></div>
                 <div class="list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-10 gap-y-20 mt-20">
@@ -273,7 +273,7 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-pc-code text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Blockchain Trading
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Cryptocurrency Trading
                             </div>
                             <div class="text-placehover mt-3">Experience the excitement and potential of the cryptocurrency
                                 market with our expert trading services.</div>
@@ -284,7 +284,7 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-code text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Smart Contract
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Portfolio Management
                             </div>
                             <div class="text-placehover mt-3">We analyze market trends, manage risks, and optimize your
                                 portfolio to maximize returns and achieve your financial goals.</div>
@@ -295,7 +295,7 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-lamp-gear text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Easy Integration
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Investment Advice
                             </div>
                             <div class="text-placehover mt-3">Our team of experienced advisors will guide you in making
                                 informed investment, whether you're a beginner trader.</div>
@@ -306,7 +306,7 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-text-pen text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Finance Management
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Risk Management
                             </div>
                             <div class="text-placehover mt-3">We employ industry-leading tools and techniques to protect
                                 your investments and minimize potential losses.</div>
@@ -317,7 +317,7 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-chart text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Markets Update</div>
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Research and Analysis</div>
                             <div class="text-placehover mt-3">We provide timely reports, market updates, and data-driven
                                 insights to help you make informed trading decisions.</div>
                         </a></div>
@@ -328,7 +328,7 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-vali text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Strategic Consulting</div>
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Education and Resources</div>
                             <div class="text-placehover mt-3">Expand your knowledge and skills in cryptocurrency trading
                                 through our educational resources.</div>
                         </a></div>
