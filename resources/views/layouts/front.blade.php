@@ -614,6 +614,7 @@
         /* ]]> */
     </script>
 
+
     {{-- livechat --}}
     {!! json_decode(site('livechat')) !!}
 
