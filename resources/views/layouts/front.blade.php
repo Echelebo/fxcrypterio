@@ -639,17 +639,9 @@
         function openVideo() {
             document.querySelector(".modal-video-main").classList.toggle("open");
         }
-    </script>
 
-    <script>
-        // Get the modal
-        var modal = document.querySelector(".modal-video-main");
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.classList.toggle("open");
-            }
+        function closeDivW() {
+            document.getElementsByClassName("modal-video-main open").classList.toggle("open");
         }
     </script>
 
