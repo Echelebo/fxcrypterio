@@ -193,9 +193,9 @@
                             class="w-full h-full object-cover" style="color:transparent"
                             srcset="/finatex-next.vercel.app/_next/images/component/thumbnail6.png&w=3840&q=75 1x"
                             src="/finatex-next.vercel.app/_next/images/component/thumbnail6.png&w=3840&q=75"></div><span
-                        class="absolute sm:w-20 w-16 sm:h-20 h-16 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center bg-white rounded-full cursor-pointer duration-300 text-critical hover:bg-critical hover:text-white"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                            viewBox="0 0 256 256" class="sm:text-4xl text-3xl">
+                        class="absolute sm:w-20 w-16 sm:h-20 h-16 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center bg-white rounded-full cursor-pointer duration-300 text-critical hover:bg-critical hover:text-white"
+                        onclick="openVideo()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            fill="currentColor" viewBox="0 0 256 256" class="sm:text-4xl text-3xl">
                             <path
                                 d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z">
                             </path>
@@ -251,18 +251,22 @@
                 </div>
             </div>
         </div>
+
+
         <div class="modal-video-block">
             <div class="modal-video-main ">
-                <div class="video-block h-full w-full"><iframe src="https://www.youtube.com/embed/RaQKTgGyyyo"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                <div class="video-block h-full w-full">
+                    <iframe src="https://www.youtube.com/embed/RaQKTgGyyyo" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                    </iframe>
                 </div>
             </div>
         </div>
         <div class="service-block style-six lg:pt-[100px] sm:pt-16 pt-10">
             <div class="container flex flex-col items-center">
                 <div class="heading3 lg:w-7/12 text-white text-center">Our services</div>
-                <div class="body3 text-surface text-center mt-6 w-full lg:w-1/2 sm:w-2/3">Customized cryptocurrency services designed to meet
+                <div class="body3 text-surface text-center mt-6 w-full lg:w-1/2 sm:w-2/3">Customized cryptocurrency
+                    services designed to meet
                     your unique needs and drive your financial success <a
                         class="text-button duration-300 underline ml-2 text-white hover:text-orange"
                         href="{{ route('service') }}">View case</a></div>
@@ -317,7 +321,8 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-chart text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Research and Analysis</div>
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Research and Analysis
+                            </div>
                             <div class="text-placehover mt-3">We provide timely reports, market updates, and data-driven
                                 insights to help you make informed trading decisions.</div>
                         </a></div>
@@ -328,7 +333,8 @@
                                 class="icon md:w-[100px] w-20 md:h-[100px] h-20 flex items-center justify-center rounded-2xl">
                                 <i class="icon-vali text-white md:text-5xl text-4xl"></i>
                             </div>
-                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Education and Resources</div>
+                            <div class="heading7 text-white hover:text-orange duration-300 mt-6">Education and Resources
+                            </div>
                             <div class="text-placehover mt-3">Expand your knowledge and skills in cryptocurrency trading
                                 through our educational resources.</div>
                         </a></div>

@@ -635,6 +635,10 @@
         function closeNav() {
             document.getElementById("menu-mobile-block").classList.toggle("open");
         }
+
+        function openVideo() {
+            document.querySelector(".modal-video-main").classList.toggle("open");
+        }
     </script>
 
     <script src="/code.jquery.com/jquery-3.5.1.min.js"
