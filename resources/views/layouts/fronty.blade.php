@@ -37,6 +37,8 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
+    <script src="/finatex-next.vercel.app/_next/static/chunks/9074-5feeae2b4b34f1cc.js" async="" crossorigin=""></script>
+
     <style type="text/css">
         .rfm-marquee-container {
             overflow-x: hidden;

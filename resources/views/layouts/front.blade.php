@@ -37,6 +37,8 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
+    <script src="/finatex-next.vercel.app/_next/static/chunks/9074-5feeae2b4b34f1cc.js" async="" crossorigin=""></script>
+
     <style type="text/css">
         .rfm-marquee-container {
             overflow-x: hidden;
@@ -335,7 +337,13 @@
                             <div class="menu-right-block flex items-center"><a
                                     class="max-lg:hidden button-main bg-orange text-white rounded-full hover:bg-black"
                                     href="{{ route('user.register') }}">Get Started</a>
-
+                                <div class="menu-humburger hidden pointer"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
+                                        class="text-2xl text-white">
+                                        <path
+                                            d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z">
+                                        </path>
+                                    </svg></div>
                             </div>
                         </div>
                     </div>
