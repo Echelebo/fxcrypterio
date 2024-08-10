@@ -3,6 +3,59 @@
     $page_title = 'FAQs';
     $short_description = 'Below are some frequently asked questions from our users';
 
+    $faqs = [
+        [
+            'question' => 'What is ' . site('name') . '?',
+            'answer' =>
+                site('name') .
+                ' is an advanced trading platform that utilizes Artificial technology to analyze market trends and execute trades with high precision.',
+        ],
+        [
+            'question' => 'How can I get started with ' . site('name') . '?',
+            'answer' =>
+                'Getting started is simple. Sign up for an account, complete the verification process, and you can begin trading.',
+        ],
+        [
+            'question' => 'Is my personal information secure with ' . site('name') . '?',
+            'answer' =>
+                'Yes, we take data security seriously. We employ industry-standard measures to protect your information.',
+        ],
+        [
+            'question' => 'Can I trade on ' . site('name') . ' from anywhere?',
+            'answer' =>
+                'Absolutely ' . site('name') . ' allows you to trade from anywhere with an internet connection.',
+        ],
+
+        [
+            'question' => 'Do I need prior trading experience to use ' . site('name') . '?',
+            'answer' =>
+                'No, ' .
+                site('name') .
+                ' is designed for both beginners and experienced traders. We offer educational resources to help you get started.',
+        ],
+        [
+            'question' => 'What fees are associated with using ' . site('name') . '?',
+            'answer' =>
+                'We charge competitive fees, which are transparently displayed on our platform. There are no hidden charges.',
+        ],
+        [
+            'question' => 'Can I withdraw my profits easily?',
+            'answer' =>
+                'Yes, withdrawing your profits is straightforward. You can initiate withdrawals through your account.',
+        ],
+        [
+            'question' => 'Is customer support available?',
+            'answer' =>
+                'Absolutely. Our customer support team is here to assist you with any questions or issues you may have.',
+        ],
+        [
+            'question' => 'How often are trading signals generated?',
+            'answer' =>
+                site('name') .
+                ' generates trading signals continuously, ensuring you have access to up-to-date market information.',
+        ],
+    ];
+
 @endphp
 
 {{-- layout --}}
@@ -41,136 +94,17 @@
         <div class="faq-block lg:py-[100px] sm:py-16 py-10">
             <div class="container flex items-center justify-center">
                 <div class="w-full lg:w-2/3">
-                    <div class="heading6">Payments</div>
-                    <div class="list-question">
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer open">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">Which device can
-                                I use to enter your service?<svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">You can access our service from any device with an
-                                    internet connection.</div>
-                            </div>
+                    @foreach ($faqs as $faq)
+                        <div class="w-full ts-gray-3-x p-3 rounded-lg">
+                            <h3 class="w-full text-2xl rescron-font-bold">
+                                {{ $faq['question'] }}
+                            </h3>
+                            <p class="w-full">
+                                {{ $faq['answer'] }}
+                            </p>
                         </div>
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">What are your
-                                products and services?<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                    fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path
-                                        d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">Our products and services include [describe your
-                                    products/services briefly].</div>
-                            </div>
-                        </div>
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">How can I
-                                contact your customer support department?<svg xmlns="http://www.w3.org/2000/svg"
-                                    width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path
-                                        d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">You can contact our customer support department by
-                                    [provide contact information such as phone number or email] during our business hours.
-                                    Our team is ready to assist you with any inquiries or concerns.</div>
-                            </div>
-                        </div>
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">Can I return
-                                items if I'm not satisfied?<svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path
-                                        d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">Yes, you can return items within [specify time frame]
-                                    if you are not satisfied. Please review our return policy for further instructions.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="heading6 md:mt-10 mt-6">Suggestion</div>
-                    <div class="list-question">
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">What is your
-                                warranty policy?<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                    fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path
-                                        d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">We offer a [specify duration] warranty on our
-                                    products. Please see our warranty policy for specific details and coverage.</div>
-                            </div>
-                        </div>
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">What are your
-                                shipping and delivery policies?<svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path
-                                        d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">Our shipping and delivery policies vary depending on
-                                    the location and shipping method chosen. Please refer to our shipping page for detailed
-                                    information.</div>
-                            </div>
-                        </div>
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">What payment
-                                methods do you accept?<svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path
-                                        d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">We accept various payment methods, including [list
-                                    accepted payment methods]. You can choose the most convenient option during the checkout
-                                    process.</div>
-                            </div>
-                        </div>
-                        <div
-                            class="question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ">
-                            <div class="question-item-main flex items-center justify-between py-4 heading7">Do you have a
-                                customer loyalty program?<svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 256 256" class="text-xl">
-                                    <path
-                                        d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z">
-                                    </path>
-                                </svg></div>
-                            <div class="content-question">
-                                <div class="border-line w-full"></div>
-                                <div class="body3 text-secondary pb-4">Yes, we have a customer loyalty program. Earn points
-                                    with each purchase and enjoy exclusive benefits. Join now to start earning rewards!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -179,8 +113,8 @@
                 <div class="row flex items-center justify-center">
                     <div class="w-full lg:w-2/3">
                         <div class="content bg-gradient-blue rounded-xl flex flex-col items-center gap-4 py-8 px-7">
-                            <div class="bg-img w-[120px]"><img alt="" loading="lazy" width="4000"
-                                    height="4000" decoding="async" data-nimg="1" class="w-full"
+                            <div class="bg-img w-[120px]"><img alt="" loading="lazy" width="4000" height="4000"
+                                    decoding="async" data-nimg="1" class="w-full"
                                     srcset="/finatex-next.vercel.app/_next/images/component/avatar-group.png&w=3840&q=75 1x"
                                     src="/finatex-next.vercel.app/_next/images/component/avatar-group.png&w=3840&q=75"
                                     style="color: transparent;"></div>
@@ -189,15 +123,15 @@
                                 <div class="body3 text-white mt-2">Can’t find the answer you’re looking for? Please chat to
                                     our friendly team.</div>
                             </div><a class="button-main hover:bg-black bg-blue text-white rounded-full"
-                                href="/contact/contact-two">Chat Center</a>
+                                href="https://wa.me/31685018131">WhatsApp Chat</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cta-block style-two relative lg:h-[120px] h-[180px]">
-            <div class="bg-cta w-full h-full absolute top-0 left-0 z-[-1]"><img alt="" loading="lazy"
-                    width="5000" height="5000" decoding="async" data-nimg="1" class="w-full h-full object-cover"
+            <div class="bg-cta w-full h-full absolute top-0 left-0 z-[-1]"><img alt="" loading="lazy" width="5000"
+                    height="5000" decoding="async" data-nimg="1" class="w-full h-full object-cover"
                     srcset="/finatex-next.vercel.app/_next/images/cta/bg-cta1.png&w=3840&q=75 1x"
                     src="/finatex-next.vercel.app/_next/images/cta/bg-cta1.png&w=3840&q=75" style="color: transparent;">
             </div>

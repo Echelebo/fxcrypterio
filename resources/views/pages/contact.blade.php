@@ -122,29 +122,24 @@
                         </div>
                     </div>
                     <div class="w-full xl:w-3/5 xl:pl-20">
-                        <form class="form-block flex flex-col justify-between gap-5">
+                        <form action="{{ route('contact-validate') }}" method="post" enctype="multipart/form-data"
+                            class="form-block flex flex-col justify-between gap-5">
+                            @csrf
                             <div class="heading">
-                                <div class="heading5">Request a quote</div>
-                                <div class="body3 text-secondary mt-2">We will get back to you within 24 hours, or call us
-                                    everyday</div>
+                                <div class="heading5">Request a support</div>
+                                <div class="body3 text-secondary mt-2">We will get back to you within 24 hours, or chat us
+                                    on
+                                    WhatsApp everyday</div>
                             </div>
                             <div class="grid sm:grid-cols-2 gap-5">
                                 <div class="w-full"><input
                                         class="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"
-                                        placeholder="Name" required="" type="text"></div>
+                                        placeholder="Email" required="" name="email" type="email"></div>
                                 <div class="w-full"><input
                                         class="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"
-                                        placeholder="Subject" required="" type="text"></div>
-                                <div class="col-span-2"><input
-                                        class="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg"
-                                        placeholder="Email" required="" type="text"></div>
-                                <div class="col-span-2"><select
-                                        class="w-full bg-surface text-secondary caption1 pl-3 py-3 rounded-lg"
-                                        name="form">
-                                        <option value="Financial Planning">Financial Planning</option>
-                                        <option value="Business Planning">Business Planning</option>
-                                        <option value="Development Planning">Development Planning</option>
-                                    </select><i class="ph ph-caret-down"></i></div>
+                                        placeholder="Subject" required="" type="text" name="subject"></div>
+
+
                                 <div class="col-span-2 w-full">
                                     <textarea class="w-full bg-surface text-secondary caption1 px-4 py-3 rounded-lg" name="message" rows="4"
                                         placeholder="Your Message" required=""></textarea>
