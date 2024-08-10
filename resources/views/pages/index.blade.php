@@ -429,7 +429,7 @@
                                         <div class="heading7 text-orange text-center">{{ $bot->name }}</div>
                                         <div class="price text-center justify-center flex items-end gap-2 mt-3">
                                             <div class="heading2">${{ $bot->min }}</div>
-                                            <div class="body3">/{{ $bot->duration }} {{ $bot->duration_type }}</div>
+                                            <div class="body3">/ {{ $bot->duration }} {{ $bot->duration_type }}</div>
                                         </div>
                                         <div class="text-center text-white mt-3">Daily Return.</div>
                                         <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">

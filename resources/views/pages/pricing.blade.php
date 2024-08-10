@@ -56,18 +56,19 @@
 
                             @foreach ($bots as $bot)
                                 <div class="w-full lg:w-1/3">
-                                    <div
-                                        class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow duration-500">
-                                        <div class="heading7 text-orange text-center">{{ $bot->name }}</div>
-                                        <div class="price text-center justify-center flex items-end gap-2 mt-3">
+                                    <div class="pricing-item py-9 px-6 rounded-xl box-shadow">
+                                        <div class="heading6">{{ $bot->name }}</div>
+                                        <div class="price flex items-end gap-2 mt-5">
                                             <div class="heading2">${{ $bot->min }}</div>
-                                            <div class="body3">/{{ $bot->duration }} {{ $bot->duration_type }}</div>
+                                            <div class="body3">/ {{ $bot->duration }} {{ $bot->duration_type }}</div>
                                         </div>
-                                        <div class="text-center text-white mt-3">Daily Return.</div>
+                                        <div class="button-block w-full mt-6"><a
+                                                class="button-main text-center block hover:text-white hover:bg-blue bg-white border border-blue text-black text-button w-full py-3 rounded-full"
+                                                href="{{ route('user.login') }}">Get Started</a></div>
                                         <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                    fill="currentColor" viewBox="0 0 256 256" class="text-orange text-3xl">
+                                                    fill="currentColor" viewBox="0 0 256 256" class="text-blue text-3xl">
                                                     <path
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
@@ -76,7 +77,7 @@
                                             </div>
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                    fill="currentColor" viewBox="0 0 256 256" class="text-orange text-3xl">
+                                                    fill="currentColor" viewBox="0 0 256 256" class="text-blue text-3xl">
                                                     <path
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
@@ -85,7 +86,7 @@
                                             </div>
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                    fill="currentColor" viewBox="0 0 256 256" class="text-orange text-3xl">
+                                                    fill="currentColor" viewBox="0 0 256 256" class="text-blue text-3xl">
                                                     <path
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
@@ -94,7 +95,7 @@
                                             </div>
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                    fill="currentColor" viewBox="0 0 256 256" class="text-orange text-3xl">
+                                                    fill="currentColor" viewBox="0 0 256 256" class="text-blue text-3xl">
                                                     <path
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
@@ -103,7 +104,7 @@
                                             </div>
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                    fill="currentColor" viewBox="0 0 256 256" class="text-orange text-3xl">
+                                                    fill="currentColor" viewBox="0 0 256 256" class="text-blue text-3xl">
                                                     <path
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
@@ -112,7 +113,7 @@
                                             </div>
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                    fill="currentColor" viewBox="0 0 256 256" class="text-orange text-3xl">
+                                                    fill="currentColor" viewBox="0 0 256 256" class="text-blue text-3xl">
                                                     <path
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
@@ -120,9 +121,6 @@
                                                 <div class="body3">Unlimited Signals</div>
                                             </div>
                                         </div>
-                                        <div class="button-block w-full mt-6"><a
-                                                class="button-main text-center block hover:text-white hover:bg-orange bg-white border border-orange text-black text-button w-full py-3"
-                                                href="{{ route('user.login') }}">Get Started</a></div>
                                     </div>
                                 </div>
                             @endforeach
