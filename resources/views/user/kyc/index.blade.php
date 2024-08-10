@@ -188,7 +188,7 @@
                                     class=" h-20 rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer type">
                                     <div class="relative type_select hidden" id="national_id">
                                         <div
-                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor"
                                                 class="bi bi-check2-circle" viewBox="0 0 16 16">
                                                 <path
@@ -207,7 +207,7 @@
                                     class=" h-20 rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer type">
                                     <div class="relative type_select hidden" id="passport">
                                         <div
-                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor"
                                                 class="bi bi-check2-circle" viewBox="0 0 16 16">
                                                 <path
@@ -226,7 +226,7 @@
                                     class=" h-20 rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer type">
                                     <div class="relative type_select hidden" id="voters_card">
                                         <div
-                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor"
                                                 class="bi bi-check2-circle" viewBox="0 0 16 16">
                                                 <path
@@ -245,7 +245,7 @@
                                     class=" h-20 rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer type">
                                     <div class="relative type_select hidden" id="drivers_license">
                                         <div
-                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor"
                                                 class="bi bi-check2-circle" viewBox="0 0 16 16">
                                                 <path
@@ -266,7 +266,7 @@
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
                                 <div class="w-full grid grid-cols-1  gap-5 mb-3 kyc-field hidden">
                                     <label for="" class="flex font-medium font-mono items-center space-x-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-purple-500"
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-500"
                                             fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
                                             <path
                                                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z" />
@@ -299,7 +299,7 @@
                                 <div class="w-full grid grid-cols-1  gap-5 mb-3 kyc-field hidden" id="kyc-field-back">
                                     <label for="" class="flex font-medium font-mono items-center space-x-1">
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-purple-500"
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-500"
                                             fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
                                             <path
                                                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
@@ -331,7 +331,7 @@
 
                                 <div class="w-full grid grid-cols-1  gap-5 mb-3 kyc-field hidden">
                                     <label for="" class="flex font-medium font-mono items-center space-x-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-purple-500"
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-500"
                                             fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
                                             <path
                                                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
@@ -365,7 +365,7 @@
 
                             <div class="mt-10 mb-10 px-3 kyc-field hidden">
                                 <button type="submit"
-                                    class="bg-purple-500 px-2 py-1 rounded-full hover:scale-110 transition-all"> Upload
+                                    class="bg-blue-500 px-2 py-1 rounded-full hover:scale-110 transition-all"> Upload
                                     Documents </button>
                             </div>
 

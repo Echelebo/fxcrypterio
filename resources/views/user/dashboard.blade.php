@@ -30,7 +30,7 @@
 
                 <div class="w-full flex items-center justify-between">
                     <div class="flex items-center space-x-2 font-mono">
-                        <div class=" text-purple-500 rounded-full p-2 w-8 h-8">
+                        <div class=" text-blue-500 rounded-full p-2 w-8 h-8">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
                                 <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
                                 <path fill-rule="evenodd"
@@ -164,8 +164,7 @@
                     <div class="grid grid-cols-1 gap-3 mt-5">
 
                         @forelse ($activations as $bot)
-                            <div
-                                class="w-full  rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer">
+                            <div class="w-full  rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer">
                                 <div class="rounded-lg">
 
                                     <div class="p-2">
@@ -284,7 +283,7 @@
 
                                     </p>
 
-                                    <p class="text-purple-500 font-mono">{{ $history->pair }}</p>
+                                    <p class="text-blue-500 font-mono">{{ $history->pair }}</p>
 
                                 </div>
                                 <div class="w-full flex justify-between items-center p-2 text-xs">

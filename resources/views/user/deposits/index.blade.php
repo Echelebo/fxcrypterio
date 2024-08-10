@@ -6,10 +6,10 @@
             <div class="w-full-x lg:w-1/3 h-52  rounded-lg p-5 mb-3">
                 <div class="w-full grid grid-cols-1 gap-3 p-2">
                     <a data-target="deposits" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         Deposit History</a>
                     <a data-target="new-deposit" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         New Deposit</a>
 
 
@@ -35,13 +35,14 @@
                                             search
                                         </span>
                                         <input type="text" placeholder="Txn Ref" id="search-deposit-input"
-                                            class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100" value="{{ request()->s }}">
-                                        
+                                            class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100"
+                                            value="{{ request()->s }}">
+
 
                                     </div>
                                     <div class="simple-pagination" data-paginator="deposits">
                                         <a id="search-deposit-button"
-                                            class="paginator-link px-3 py-2 bg-purple-500 text-white hover:scale-110 transition-all"
+                                            class="paginator-link px-3 py-2 bg-blue-500 text-white hover:scale-110 transition-all"
                                             data-link="{{ route('user.deposits.index') }}" href="">Search</a>
                                     </div>
                                 </div>
@@ -98,7 +99,7 @@
                                             {{ $deposit->converted_amount . ' ' . $deposit->currency }}</p>
                                         <p class="flex justify-end">
                                             <button data-link="{{ route('user.deposits.view', ['ref' => $deposit->ref]) }}"
-                                                class="view-single-deposit flex space-x-1 items-center text-white  hover:scale-110 transition-all hover:text-white bg-purple-500 px-1 rounded-full text-xs">
+                                                class="view-single-deposit flex space-x-1 items-center text-white  hover:scale-110 transition-all hover:text-white bg-blue-500 px-1 rounded-full text-xs">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
@@ -150,22 +151,25 @@
                                 </div>
                                 <div class="grid grid-cols-2 gap-2 text-mono text-sm break-all">
                                     <h2 class="" style="font-size: 14px;">Status </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"> <span id="display_deposit_status"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"> <span
+                                            id="display_deposit_status"></span>
                                     </h2>
 
                                     <h2 class="" style="font-size: 14px;">Amount </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;">{{ site('currency') }}<span id="display_deposit_amount"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;">{{ site('currency') }}<span
+                                            id="display_deposit_amount"></span>
                                     </h2>
 
                                     <h2 class="" style="font-size: 14px;">Fee </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;">{{ site('currency') }}<span id="display_deposit_fee"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;">{{ site('currency') }}<span
+                                            id="display_deposit_fee"></span>
                                     </h2>
 
 
                                     <h2 class="" style="font-size: 14px;">Pay Amount</h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"><span id="display_deposit_converted_amount"
-                                            class="clipboard cursor-pointer" data-copy=""> </span> <span
-                                            id="display_deposit_currency"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"><span
+                                            id="display_deposit_converted_amount" class="clipboard cursor-pointer"
+                                            data-copy=""> </span> <span id="display_deposit_currency"></span>
                                     </h2>
 
                                     <h2 class="" style="font-size: 14px;">Network </h2>
@@ -174,48 +178,53 @@
                                     </h2>
 
                                     <h2 class="" style="font-size: 14px;">Wallet Address </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"><span id="display_deposit_payment_wallet"
-                                            class="clipboard cursor-pointer" data-copy=""></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"><span
+                                            id="display_deposit_payment_wallet" class="clipboard cursor-pointer"
+                                            data-copy=""></span>
                                     </h2>
 
                                     <h2 class="" style="font-size: 14px;">Txn Ref </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"><span id="display_deposit_ref" class="clipboard cursor-pointer"
-                                            data-copy=""></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"><span id="display_deposit_ref"
+                                            class="clipboard cursor-pointer" data-copy=""></span>
                                     </h2>
 
                                     {{-- 'status' => $deposit->status, --}}
 
                                 </div>
-<form action="{{ route('user.deposits.screenshot') }}" method="post" enctype="multipart/form-data" id="screenshotForm">
-                                @csrf
-                                
-                                <input id="getref" type="hidden" name="ref" value="">
-                                
-                                <br />
-                                <br />
-                                
-                                <div class="flex justify-end mb-5">
-                                    <div class="grid grid-cols-1 mb-2 mt-5 w-full">
-                                        <div class="relative">
+                                <form action="{{ route('user.deposits.screenshot') }}" method="post"
+                                    enctype="multipart/form-data" id="screenshotForm">
+                                    @csrf
 
-                                            <span class="theme1-input-icon material-icons">
-                                                paid
-                                            </span>
-                                            <input type="file" class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100" name="screenshot" required>
-                                            <label for="screenshot"
-                                                class="placeholder-label text-gray-300  px-2">Upload Payment Screenshot
-                                            </label>
+                                    <input id="getref" type="hidden" name="ref" value="">
 
+                                    <br />
+                                    <br />
+
+                                    <div class="flex justify-end mb-5">
+                                        <div class="grid grid-cols-1 mb-2 mt-5 w-full">
+                                            <div class="relative">
+
+                                                <span class="theme1-input-icon material-icons">
+                                                    paid
+                                                </span>
+                                                <input type="file"
+                                                    class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100"
+                                                    name="screenshot" required>
+                                                <label for="screenshot"
+                                                    class="placeholder-label text-gray-300  px-2">Upload Payment Screenshot
+                                                </label>
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="mt-10 mb-10 px-3">
-                                    <button type="submit"
-                                        class="bg-purple-500 px-2 py-1 rounded-lg text-white hover:scale-110 transition-all"> Submit Now
-                                    </button>
-                                </div>
-                            </form>
+                                    <div class="mt-10 mb-10 px-3">
+                                        <button type="submit"
+                                            class="bg-blue-500 px-2 py-1 rounded-lg text-white hover:scale-110 transition-all">
+                                            Submit Now
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="mt-5" id="display-new-deposit">
@@ -276,7 +285,7 @@
                                         data-currency_code="{{ $coin->code }}">
                                         <div class="relative coin_select hidden" id="{{ $coin->code }}">
                                             <div
-                                                class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                                class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
                                                     fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
                                                     <path
@@ -328,9 +337,9 @@
                                             </span>
                                             <input type="number" step="any"
                                                 placeholder="Amount ({{ site('currency') }})" id="amount"
-                                                class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100" name="amount" value="0" required>
-                                            <label for="amount"
-                                                class="placeholder-label text-gray-300  px-2">Amount
+                                                class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100"
+                                                name="amount" value="0" required>
+                                            <label for="amount" class="placeholder-label text-gray-300  px-2">Amount
                                                 ({{ site('currency') }})
                                             </label>
 
@@ -340,7 +349,8 @@
 
                                 <div class="mt-10 mb-10 px-3">
                                     <button type="submit"
-                                        class="bg-purple-500 px-2 py-1 rounded-lg text-white hover:scale-110 transition-all"> Pay Now
+                                        class="bg-blue-500 px-2 py-1 rounded-lg text-white hover:scale-110 transition-all">
+                                        Pay Now
                                     </button>
                                 </div>
                             </form>
@@ -417,7 +427,7 @@
                                             <h2 class="font-bold" style="font-size: 14px;"> <span id="single_display_deposit_status"></span>
                                             </h2>
                                         </div>
-                                        
+
                                         <div class="w-full flex items-center justify-between">
                                             <h2 class="" style="font-size: 14px;">Amount </h2>
                                             <h2 class="font-bold" style="font-size: 14px;">{{ site('currency') }}<span id="single_display_deposit_amount"></span>
@@ -453,10 +463,10 @@
                                                     data-copy=""></span>
                                             </h2>
                                         </div>
-    
-                                        
+
+
                                     </div>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -512,7 +522,7 @@
                     if (interval) {
                         clearInterval(interval);
                     }
-                    
+
                     interval = setInterval(function() {
                         updateCountdown(targetId, targetDateString);
                     }, 1000);

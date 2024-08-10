@@ -10,7 +10,7 @@
                     </div>
 
 
-                    <div class=" rounded-lg p-2 text-purple-500 flex items-center cursor-pointer clipboard break-all"
+                    <div class=" rounded-lg p-2 text-blue-500 flex items-center cursor-pointer clipboard break-all"
                         data-copy="{{ route('user.register', ['ref' => user()->username ?? 'notset']) }}">
                         {{ route('user.register', ['ref' => user()->username ?? 'notset']) }}
                         <span class="text-orange-500">
@@ -40,13 +40,17 @@
                                 if ($level >= $maxLevels) {
                                     return;
                                 }
-                            
+
                                 $referredUsers = $user->referredUsers;
-                            
+
                                 if ($referredUsers->count() > 0) {
                                     echo '<div class="w-full">';
                                     foreach ($referredUsers as $referredUser) {
-                                        echo '<div class="border-l-4 border-l-blue-500 mt-3" style="margin-left:' . 40 * $level . 'px"> <span class=" p-3 w-44">' . $referredUser->username . '</span></div>';
+                                        echo '<div class="border-l-4 border-l-blue-500 mt-3" style="margin-left:' .
+                                            40 * $level .
+                                            'px"> <span class=" p-3 w-44">' .
+                                            $referredUser->username .
+                                            '</span></div>';
                                         displayReferralTree($referredUser, $level + 1, $maxLevels);
                                     }
                                     echo '</div>';

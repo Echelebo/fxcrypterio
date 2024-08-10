@@ -10,7 +10,7 @@
                     person
                 </span>
                 <input type="text" id="email" name="email" placeholder="Email Or Username" class="theme1-text-input"
-                    required @if(env('DEMO_MODE')) value="user@user.com" @endif>
+                    required @if (env('DEMO_MODE')) value="user@user.com" @endif>
                 <label for="email" class="placeholder-label text-gray-300  ts-gray-2 px-2">Email or Username</label>
                 <span>
                     @error('email')
@@ -27,7 +27,7 @@
                     lock
                 </span>
                 <input type="password" name="password" placeholder="Password" id="password" class="theme1-text-input"
-                    required @if(env('DEMO_MODE')) value="password" @endif>
+                    required @if (env('DEMO_MODE')) value="password" @endif>
                 <label for="password" class="placeholder-label text-gray-300 ts-gray-2 px-2">Password</label>
                 <span>
                     @error('password')
@@ -46,11 +46,11 @@
 
         <div class="flex justify-between text-gray-300 text-xs font-semibold mt-4 px-5 lg:px-10">
             <div>
-                <a href="{{ route('user.register') }}" class="hover:text-purple-700">Don't have account? Register</a>
+                <a href="{{ route('user.register') }}" class="hover:text-blue-700">Don't have account? Register</a>
             </div>
 
             <div>
-                <a href="{{ route('user.forgot-password.index') }}" class="hover:text-purple-700">Forgot Password?</a>
+                <a href="{{ route('user.forgot-password.index') }}" class="hover:text-blue-700">Forgot Password?</a>
             </div>
 
 

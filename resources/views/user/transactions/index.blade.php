@@ -28,7 +28,8 @@
                                             search
                                         </span>
                                         <input type="text" placeholder="Txn Ref" id="search-transaction-input"
-                                            class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100 rounded-0" value="{{ request()->s }}">
+                                            class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100 rounded-0"
+                                            value="{{ request()->s }}">
                                         <label for="search-transaction-input"
                                             class="placeholder-label text-gray-300  px-2">Txn Ref
                                         </label>
@@ -36,7 +37,7 @@
                                     </div>
                                     <div class="simple-pagination" data-paginator="transactions">
                                         <a id="search-transaction-button"
-                                            class="paginator-link px-3 py-2 bg-purple-500 hover:scale-110 transition-all"
+                                            class="paginator-link px-3 py-2 bg-blue-500 hover:scale-110 transition-all"
                                             data-link="{{ route('user.transactions.index') }}" href="">Search</a>
                                     </div>
                                 </div>
@@ -45,24 +46,27 @@
                                 <div
                                     class="w-full flex justify-between items-center  p-2 rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer">
                                     <div class="">
-                                        <p class="local-time">{{ date('d-m-y H:i:s', strtotime($transaction->created_at)) }}</p>
+                                        <p class="local-time">{{ date('d-m-y H:i:s', strtotime($transaction->created_at)) }}
+                                        </p>
                                         <p class="clipboard cursor-pointer break-all" data-copy="{{ $transaction->ref }}">
-                                            
-                                            REF: {{ $transaction->ref}}
+
+                                            REF: {{ $transaction->ref }}
                                         </p>
                                         <p class="font-bold text-mono">{{ formatAmount($transaction->amount) }}</p>
-                                        
+
                                     </div>
                                     <div class="break-all">
                                         <p class="flex justify-end items-center space-x-1">
                                             @if ($transaction->type == 'debit')
                                                 <span class="text-red-500 uppercase text-xs">{{ $transaction->type }}</span>
                                             @else
-                                                <span class="text-green-500 uppercase text-xs">{{ $transaction->type }}</span>
+                                                <span
+                                                    class="text-green-500 uppercase text-xs">{{ $transaction->type }}</span>
                                             @endif
                                         </p>
-                                        <p class="flex justify-end cursor-pointer text-xs break-all" data-copy="{{ $transaction->description }}">
-                                            
+                                        <p class="flex justify-end cursor-pointer text-xs break-all"
+                                            data-copy="{{ $transaction->description }}">
+
                                             {{ $transaction->description }}
                                         </p>
                                     </div>
@@ -93,7 +97,7 @@
 
                 </div>
 
-                
+
 
 
 
@@ -116,7 +120,5 @@
             var link = base_link + '?s=' + encodedRef;
             $('#search-transaction-button').attr('href', link);
         });
-
-        
     </script>
 @endsection

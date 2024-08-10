@@ -9,7 +9,7 @@
                         Basic Information
                     </h2>
                     <a href="{{ route('user.profile.edit') }}"
-                        class="flex space-x-1 items-center hover:scale-110 transition-all bg-purple-500 rounded-full px-2 py-1 shadow">
+                        class="flex space-x-1 items-center hover:scale-110 transition-all bg-blue-500 rounded-full px-2 py-1 shadow">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -29,7 +29,7 @@
 
                 <div class="mt-3 w-full">
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -43,7 +43,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -127,7 +127,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -141,7 +141,7 @@
                     </div>
 
                     <div class="w-3/4 md:w-2/3 grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                        <div class="text-purple-500 flex items-center space-x-1 ">
+                        <div class="text-blue-500 flex items-center space-x-1 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="currentColor"
                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
                                 <circle cx="8" cy="8" r="8" />
@@ -168,7 +168,7 @@
 
                     <div class="mt-3 w-full">
                         <div class="w-full grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                            <div class="text-purple-500 flex items-center space-x-1 ">
+                            <div class="text-blue-500 flex items-center space-x-1 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                                     class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
                                     <path
@@ -201,7 +201,7 @@
                         </div>
 
                         <div class="w-full grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                            <div class="text-purple-500 flex items-center space-x-1 ">
+                            <div class="text-blue-500 flex items-center space-x-1 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                                     class="bi bi-fingerprint" viewBox="0 0 16 16">
                                     <path
@@ -240,7 +240,7 @@
                         </div>
 
                         <div class="w-full grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                            <div class="text-purple-500 flex items-center space-x-1 ">
+                            <div class="text-blue-500 flex items-center space-x-1 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                                     class="bi bi-box-arrow-in-down-left" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -273,7 +273,7 @@
                         </div>
 
                         <div class="w-full grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                            <div class="text-purple-500 flex items-center space-x-1 ">
+                            <div class="text-blue-500 flex items-center space-x-1 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                                     class="bi bi-box-arrow-in-down-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -306,7 +306,7 @@
                         </div>
 
                         <div class="w-full grid grid-cols-2 hover:scale-110 transition-all mb-2">
-                            <div class="text-purple-500 flex items-center space-x-1 ">
+                            <div class="text-blue-500 flex items-center space-x-1 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
                                     class="bi bi-robot" viewBox="0 0 16 16">
                                     <path
@@ -354,7 +354,7 @@
 
                     <div class="mt-3 w-full">
                         <div class="w-full flex justify-center mb-2">
-                            <div class=" rounded-lg p-2 text-purple-500 flex items-center cursor-pointer clipboard"
+                            <div class=" rounded-lg p-2 text-blue-500 flex items-center cursor-pointer clipboard"
                                 data-copy="{{ route('user.register', ['ref' => user()->username ?? 'notset']) }}">
                                 {{ route('user.register', ['ref' => user()->username ?? 'notset']) }}
                                 <span class="text-orange-500">
@@ -379,7 +379,7 @@
 
 
                     <div class="mt-3 w-full">
-                        <div class=" rounded-lg p-2 text-purple-500 flex items-center cursor-pointer">
+                        <div class=" rounded-lg p-2 text-blue-500 flex items-center cursor-pointer">
                             {{ date('M d, Y', strtotime(user()->created_at)) }}
 
                         </div>

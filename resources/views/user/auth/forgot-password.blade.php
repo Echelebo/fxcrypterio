@@ -30,7 +30,7 @@
 
         <div class="flex justify-between text-gray-300 text-xs font-semibold mt-4 px-5 lg:px-10">
             <div>
-                <a href="{{ route('user.login') }}" class="hover:text-purple-700">Back to login</a>
+                <a href="{{ route('user.login') }}" class="hover:text-blue-700">Back to login</a>
             </div>
 
 
@@ -104,7 +104,7 @@
 
         <div class="flex justify-between text-gray-300 text-xs font-semibold mt-4 px-5 lg:px-10">
             <div>
-                <a href="{{ route('user.login') }}" class="hover:text-purple-700">Go Back</a>
+                <a href="{{ route('user.login') }}" class="hover:text-blue-700">Go Back</a>
             </div>
 
 

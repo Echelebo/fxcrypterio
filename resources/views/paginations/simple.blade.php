@@ -18,12 +18,12 @@
                 $endIndex = $currentPage <= 2 ? min($pageCount, 6) : min($currentPage + 2, $pageCount);
             @endphp
 
-            
+
 
             @for ($i = $startIndex; $i <= $endIndex; $i++)
                 @if ($i == $currentPage)
                     <div
-                        class="bg-purple-500 px-3 rounded border border-slate-800 hover:border-slate-600 cursor-pointer hover:scale-110 transition-all paginator-link">
+                        class="bg-blue-500 px-3 rounded border border-slate-800 hover:border-slate-600 cursor-pointer hover:scale-110 transition-all paginator-link">
                         <span>{{ $i }}</span>
                     </div>
                 @else

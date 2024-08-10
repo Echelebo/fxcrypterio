@@ -6,15 +6,15 @@
             <div class="w-full-x lg:w-1/3 h-52  rounded-lg p-5 mb-3">
                 <div class="w-full grid grid-cols-1 gap-3 p-2">
                     <a data-target="withdrawals" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         Withdrawal History</a>
                     <a data-target="new-withdrawal" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         New withdrawal</a>
 
                     @if (site('auto_withdraw') == 1)
                         <a data-target="withdrawal-wallets" role="button"
-                            class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                            class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                             Withdrawal Wallets</a>
                     @endif
 
@@ -39,7 +39,8 @@
                                             search
                                         </span>
                                         <input type="text" placeholder="Txn Ref" id="search-withdrawal-input"
-                                            class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100 rounded-0" value="{{ request()->s }}">
+                                            class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100 rounded-0"
+                                            value="{{ request()->s }}">
                                         <label for="search-withdrawal-input"
                                             class="placeholder-label text-gray-300  px-2">Txn Ref
                                         </label>
@@ -47,7 +48,7 @@
                                     </div>
                                     <div class="simple-pagination" data-paginator="withdrawals">
                                         <a id="search-withdrawal-button"
-                                            class="paginator-link px-3 py-2 bg-purple-500 hover:scale-110 transition-all"
+                                            class="paginator-link px-3 py-2 bg-blue-500 hover:scale-110 transition-all"
                                             data-link="{{ route('user.withdrawals.index') }}" href="">Search</a>
                                     </div>
                                 </div>
@@ -113,7 +114,7 @@
                                         <p class="flex justify-end clipboard cursor-pointer text-xs break-all"
                                             data-copy="{{ $withdrawal->wallet_address }}">
                                             {{-- <button data-link=""
-                                                class="view-single-withdrawal flex space-x-1 items-center text-gray-300  hover:scale-110 transition-all hover:text-white bg-purple-500 px-1 rounded-full text-xs">
+                                                class="view-single-withdrawal flex space-x-1 items-center text-gray-300  hover:scale-110 transition-all hover:text-white bg-blue-500 px-1 rounded-full text-xs">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
@@ -127,7 +128,8 @@
 
                                         <div class="w-full flex items-center justify-between">
                                             <h2 class="text-16">Txn Ref: </h2>
-                                            <span class="font-bold clipboard cursor-pointer" data-copy="{{ $withdrawal->ref }}">{{ $withdrawal->ref }}</span>
+                                            <span class="font-bold clipboard cursor-pointer"
+                                                data-copy="{{ $withdrawal->ref }}">{{ $withdrawal->ref }}</span>
                                             </span>
                                         </div>
                                     </div>
@@ -170,11 +172,13 @@
 
                                 <div class="grid grid-cols-2 gap-2 text-mono text-sm break-all">
                                     <h2 style="font-size: 14px;">Status </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"> <span id="display_withdrawal_status"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"> <span
+                                            id="display_withdrawal_status"></span>
                                     </h2>
 
                                     <h2 style="font-size: 14px;">Valid Until </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"> <span id="display_withdrawal_valid_until"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"> <span
+                                            id="display_withdrawal_valid_until"></span>
                                     </h2>
 
                                     <h2 style="font-size: 14px;">Amount </h2>
@@ -183,14 +187,15 @@
                                     </h2>
 
                                     <h2 style="font-size: 14px;">Fee </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;">{{ site('currency') }}<span id="display_withdrawal_fee"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;">{{ site('currency') }}<span
+                                            id="display_withdrawal_fee"></span>
                                     </h2>
 
 
                                     <h2 style="font-size: 14px;">Pay Amount</h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"><span id="display_withdrawal_converted_amount"
-                                            class="clipboard cursor-pointer" data-copy=""> </span> <span
-                                            id="display_withdrawal_currency"></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"><span
+                                            id="display_withdrawal_converted_amount" class="clipboard cursor-pointer"
+                                            data-copy=""> </span> <span id="display_withdrawal_currency"></span>
                                     </h2>
 
                                     <h2 style="font-size: 14px;">Network </h2>
@@ -199,8 +204,9 @@
                                     </h2>
 
                                     <h2 style="font-size: 14px;">Wallet Address </h2>
-                                    <h2 class="font-bold" style="font-size: 14px;"><span id="display_withdrawal_payment_wallet"
-                                            class="clipboard cursor-pointer" data-copy=""></span>
+                                    <h2 class="font-bold" style="font-size: 14px;"><span
+                                            id="display_withdrawal_payment_wallet" class="clipboard cursor-pointer"
+                                            data-copy=""></span>
                                     </h2>
 
                                     <h2 style="font-size: 14px;">Txn Ref </h2>
@@ -275,7 +281,7 @@
                                                     data-currency_code="{{ $coin->code }}">
                                                     <div class="relative coin_select hidden" id="{{ $coin->code }}">
                                                         <div
-                                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                                            class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
                                                                 fill="currentColor" class="bi bi-check2-circle"
                                                                 viewBox="0 0 16 16">
@@ -330,7 +336,7 @@
                                             data-currency_code="{{ $coin->code }}">
                                             <div class="relative coin_select hidden" id="{{ $coin->code }}">
                                                 <div
-                                                    class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                                    class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
                                                         fill="currentColor" class="bi bi-check2-circle"
                                                         viewBox="0 0 16 16">
@@ -371,7 +377,8 @@
 
                             </div>
 
-                            <form action="{{ route('user.withdrawals.new') }}" method="post" id="withdrawalForm" class="gen-form" data-action="reload">
+                            <form action="{{ route('user.withdrawals.new') }}" method="post" id="withdrawalForm"
+                                class="gen-form" data-action="reload">
                                 @csrf
                                 <input type="hidden" name="currency_code" id="currency_code">
                                 <div class="flex justify-end mb-5">
@@ -383,9 +390,9 @@
                                             </span>
                                             <input type="number" step="any"
                                                 placeholder="Amount ({{ site('currency') }})" id="amount"
-                                                class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100" name="amount" value="0" required>
-                                            <label for="amount"
-                                                class="placeholder-label text-gray-300  px-2">Amount
+                                                class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100"
+                                                name="amount" value="0" required>
+                                            <label for="amount" class="placeholder-label text-gray-300  px-2">Amount
                                                 ({{ site('currency') }})
                                             </label>
 
@@ -401,10 +408,10 @@
                                                 paid
                                             </span>
                                             <input type="text" placeholder="Wallet Address" id="wallet_address"
-                                                class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100" name="wallet_address" value="" required
+                                                class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100"
+                                                name="wallet_address" value="" required
                                                 @if (site('auto_withdraw') == 1) readonly @endif>
-                                            <label for="wallet_address"
-                                                class="placeholder-label text-gray-300  px-2">
+                                            <label for="wallet_address" class="placeholder-label text-gray-300  px-2">
                                                 Wallet Address
                                             </label>
 
@@ -414,7 +421,7 @@
 
                                 <div class="mt-10 mb-10 px-3">
                                     <button type="submit"
-                                        class="bg-purple-500 px-2 py-1 rounded-lg hover:scale-110 transition-all"> Withdraw
+                                        class="bg-blue-500 px-2 py-1 rounded-lg hover:scale-110 transition-all"> Withdraw
                                         Now
                                     </button>
                                 </div>
@@ -433,8 +440,7 @@
                 </div>
 
                 @if (site('auto_withdraw'))
-                    <div class="w-full p-5 mb-5  rounded-lg rescron-card transition-all hidden"
-                        id="withdrawal-wallets">
+                    <div class="w-full p-5 mb-5  rounded-lg rescron-card transition-all hidden" id="withdrawal-wallets">
                         <h3 class="capitalize  font-extrabold text-16"><span class="border-b-2">Withdrawal Wallets</span>
                         </h3>
 
@@ -533,7 +539,7 @@
                                                 data-currency_code="{{ $coin->code }}">
                                                 <div class="relative coin_select2 hidden" id="{{ $coin->code . 2 }}">
                                                     <div
-                                                        class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-purple-500 text-white">
+                                                        class="absolute flex justify-center items-center -top-1 -right-1 h-6 w-6 rounded-full bg-blue-500 text-white">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
                                                             fill="currentColor" class="bi bi-check2-circle"
                                                             viewBox="0 0 16 16">
@@ -588,8 +594,8 @@
                                                     paid
                                                 </span>
                                                 <input type="text" placeholder="Wallet Address" id="wallet_address2"
-                                                    class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100" name="wallet_address" value=""
-                                                    required>
+                                                    class="py-2 pr-4 text-sm text-topbar-item bg-topbar border border-topbar-border rounded pl-8 placeholder:text-slate-400 form-control focus-visible:outline-0 min-w-[300px] focus:border-blue-400 group-data-[topbar=dark]:bg-topbar-dark group-data-[topbar=dark]:border-topbar-border-dark group-data-[topbar=dark]:placeholder:text-slate-500 group-data-[topbar=dark]:text-topbar-item-dark group-data-[topbar=brand]:bg-topbar-brand group-data-[topbar=brand]:border-topbar-border-brand group-data-[topbar=brand]:placeholder:text-blue-300 group-data-[topbar=brand]:text-topbar-item-brand group-data-[topbar=dark]:dark:bg-zink-700 group-data-[topbar=dark]:dark:border-zink-500 group-data-[topbar=dark]:dark:text-zink-100"
+                                                    name="wallet_address" value="" required>
                                                 <label for="wallet_address2"
                                                     class="placeholder-label text-gray-300  px-2">
                                                     Wallet Address
@@ -601,7 +607,7 @@
 
                                     <div class="mt-10 mb-10 px-3">
                                         <button type="submit"
-                                            class="bg-purple-500 px-2 py-1 rounded-lg hover:scale-110 transition-all">
+                                            class="bg-blue-500 px-2 py-1 rounded-lg hover:scale-110 transition-all">
                                             Add
                                             Now
                                         </button>
@@ -714,11 +720,11 @@
                                                     data-copy=""></span>
                                             </h2>
                                         </div>
-    
-                                        
-    
+
+
+
                                     </div>
-    
+
                                 </div>
                             </div>
                         </div>

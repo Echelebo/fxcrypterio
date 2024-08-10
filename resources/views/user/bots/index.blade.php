@@ -8,18 +8,18 @@
             <div class="w-full-x lg:w-1/3 h-52  rounded-lg p-5 mb-3">
                 <div class="w-full grid grid-cols-1 gap-3 p-2">
                     <a data-target="bots" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         My Portfolio </a>
                     <a data-target="new-bot" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         Activate Portfolio</a>
 
                     <a data-target="bot-history" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         Portfolio History</a>
 
                     <a data-target="daily_summary" role="button"
-                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-purple-700 transition-all cursor-pointer rescron-card-trigger">
+                        class="border-l-4 border-orange-500 px-3 hover:scale-110 hover:text-blue-700 transition-all cursor-pointer rescron-card-trigger">
                         Daily Summary</a>
 
 
@@ -168,7 +168,7 @@
                         <div class="">
 
                             <div class="w-full grid grid-cols-1 lg:grid-cols-2  gap-3 mb-5 px-3 py-10">
-                                
+
                                 @forelse ($bots as $bot)
                                     <div data-target="{{ $bot->code }}"
                                         class="bg-bot-1 rounded-lg border border-slate-800 hover:border-slate-600 cursor-pointer">
@@ -200,19 +200,26 @@
                                                             <h2 class="uppercase text-xs  text-orange-500">Trading
                                                                 Portfolio
                                                             </h2>
-                                                            <h2 class="text-16">@if ($bot->max >= 100000000) {{ formatAmount($bot->min) . ' - UNLIMITED' }}  @else {{ formatAmount($bot->min) . ' - ' . formatAmount($bot->max) }} @endif
+                                                            <h2 class="text-16">
+                                                                @if ($bot->max >= 100000000)
+                                                                    {{ formatAmount($bot->min) . ' - UNLIMITED' }}
+                                                                @else
+                                                                    {{ formatAmount($bot->min) . ' - ' . formatAmount($bot->max) }}
+                                                                @endif
                                                             </h2>
                                                         </div>
                                                         <div class="text-left">
                                                             <h2 class="uppercase text-xs  text-orange-500">Avg. Daily PNL
                                                             </h2>
-                                                            <h2 class="text-16">{{ $bot->daily_min . '% - ' . $bot->daily_max . '%' }}</h2>
+                                                            <h2 class="text-16">
+                                                                {{ $bot->daily_min . '% - ' . $bot->daily_max . '%' }}</h2>
                                                         </div>
 
                                                         <div class="text-left">
                                                             <h2 class="uppercase text-xs  text-orange-500">Duration
                                                             </h2>
-                                                            <h2 class="text-16">{{ $bot->duration . $bot->duration_type }}</h2>
+                                                            <h2 class="text-16">{{ $bot->duration . $bot->duration_type }}
+                                                            </h2>
                                                         </div>
 
 
@@ -283,7 +290,7 @@
                                             </p>
                                             <p>
                                                 <span
-                                                    class="view-chart cursor-pointer flex items-center bg-purple-500 px-2 py-1 rounded-lg hover:scale-110 transition-all "
+                                                    class="view-chart cursor-pointer flex items-center bg-blue-500 px-2 py-1 rounded-lg hover:scale-110 transition-all "
                                                     data-pair="{{ $history->pair }}">View Chart</span>
                                             </p>
                                         </div>
@@ -293,18 +300,18 @@
                                             <div class="">
                                                 <div class="grid grid-cols-2 gap-1">
                                                     <p class="text-xs">Exit Time (UTC)</p>
-                                                    <p class="text-purple-500 font-mono local-time">
+                                                    <p class="text-blue-500 font-mono local-time">
                                                         {{ date('d-m-y H:i:s', $history->timestamp) }}
                                                     </p>
 
                                                     <p class="text-xs">Trading Pair</p>
-                                                    <p class="text-purple-500 font-mono">{{ $history->pair }}</p>
+                                                    <p class="text-blue-500 font-mono">{{ $history->pair }}</p>
 
                                                     <p class="text-xs">Entry Price</p>
-                                                    <p class="text-purple-500 font-mono">{{ $history->entry_price }}</p>
+                                                    <p class="text-blue-500 font-mono">{{ $history->entry_price }}</p>
 
                                                     <p class="text-xs">Exit Price</p>
-                                                    <p class="text-purple-500 font-mono">{{ $history->exit_price }}</p>
+                                                    <p class="text-blue-500 font-mono">{{ $history->exit_price }}</p>
                                                 </div>
 
                                             </div>
@@ -433,8 +440,6 @@
 
                                         </div>
                                     @endif
-
-                                  
                                 @endforeach
 
 
@@ -547,7 +552,7 @@
 
                                     <div class="mt-10 mb-10 px-3 flex flex-start">
                                         <button type="submit" id="activateButton"
-                                            class="bg-purple-500 px-2 py-1 rounded-lg hover:scale-110 transition-all"> Activate Now
+                                            class="bg-blue-500 px-2 py-1 rounded-lg hover:scale-110 transition-all"> Activate Now
                                         </button>
                                     </div>
 
