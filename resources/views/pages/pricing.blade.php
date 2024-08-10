@@ -1,8 +1,11 @@
 @php
+    use App\Models\Bot;
 
     $page_title = 'Our pricing';
     $short_description =
         'We have vering portfolio ranges for our pricing plans. Select any that best fits your pocket.';
+
+    $bots = Bot::get();
 
 @endphp
 
