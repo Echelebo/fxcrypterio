@@ -431,7 +431,7 @@
                                             <div class="heading2">${{ $bot->min }}</div>
                                             <div class="body3">/{{ $bot->duration }} {{ $bot->duration_type }}</div>
                                         </div>
-                                        <div class="text-center text-white mt-3">Trade daily.</div>
+                                        <div class="text-center text-white mt-3">Daily Return.</div>
                                         <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
@@ -441,7 +441,7 @@
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
                                                 </svg>
-                                                <div class="body3">24/7 technical support</div>
+                                                <div class="body3">24/7 Support</div>
                                             </div>
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
@@ -451,7 +451,7 @@
                                                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
                                                     </path>
                                                 </svg>
-                                                <div class="body3">Access To Market Updates</div>
+                                                <div class="body3">Market Updates</div>
                                             </div>
                                             <div class="item flex items-center gap-4"> <svg
                                                     xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
