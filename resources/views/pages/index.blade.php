@@ -254,7 +254,7 @@
 
 
         <div class="modal-video-block">
-            <div class="modal-video-main " window.onclick="closeDivW()">
+            <div class="modal-video-main ">
                 <div class="video-block h-full w-full">
                     <iframe src="https://www.youtube.com/embed/RaQKTgGyyyo" title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
