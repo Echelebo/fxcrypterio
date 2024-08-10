@@ -422,216 +422,84 @@
                     </div>
                     <div class="list-pricing show lg:mt-[60px] mt-10">
                         <div class="flex max-lg:flex-wrap gap-8">
-                            <div class="w-full lg:w-1/3">
-                                <div
-                                    class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow duration-500">
-                                    <div class="heading7 text-orange text-center">Standard</div>
-                                    <div class="price text-center justify-center flex items-end gap-2 mt-3">
-                                        <div class="heading2">$40</div>
-                                        <div class="body3">/month</div>
+                            @foreach ($bots as $bot)
+                                <div class="w-full lg:w-1/3">
+                                    <div
+                                        class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow duration-500">
+                                        <div class="heading7 text-orange text-center">{{ $bot->name }}</div>
+                                        <div class="price text-center justify-center flex items-end gap-2 mt-3">
+                                            <div class="heading2">${{ $bot->min }}</div>
+                                            <div class="body3">/{{ $bot->duration }} {{ $bot->duration_type }}</div>
+                                        </div>
+                                        <div class="text-center text-white mt-3">Trade daily.</div>
+                                        <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
+                                            <div class="item flex items-center gap-4"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 256 256"
+                                                    class="text-orange text-3xl">
+                                                    <path
+                                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                                    </path>
+                                                </svg>
+                                                <div class="body3">24/7 technical support</div>
+                                            </div>
+                                            <div class="item flex items-center gap-4"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 256 256"
+                                                    class="text-orange text-3xl">
+                                                    <path
+                                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                                    </path>
+                                                </svg>
+                                                <div class="body3">Access To Market Updates</div>
+                                            </div>
+                                            <div class="item flex items-center gap-4"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 256 256"
+                                                    class="text-orange text-3xl">
+                                                    <path
+                                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                                    </path>
+                                                </svg>
+                                                <div class="body3">Insurance</div>
+                                            </div>
+                                            <div class="item flex items-center gap-4"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 256 256"
+                                                    class="text-orange text-3xl">
+                                                    <path
+                                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                                    </path>
+                                                </svg>
+                                                <div class="body3">Unlimited Trading</div>
+                                            </div>
+                                            <div class="item flex items-center gap-4"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 256 256"
+                                                    class="text-orange text-3xl">
+                                                    <path
+                                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                                    </path>
+                                                </svg>
+                                                <div class="body3">Investment Advices</div>
+                                            </div>
+                                            <div class="item flex items-center gap-4"> <svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="currentColor" viewBox="0 0 256 256"
+                                                    class="text-orange text-3xl">
+                                                    <path
+                                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
+                                                    </path>
+                                                </svg>
+                                                <div class="body3">Unlimited Signals</div>
+                                            </div>
+                                        </div>
+                                        <div class="button-block w-full mt-6"><a
+                                                class="button-main text-center block hover:text-white hover:bg-orange bg-white border border-orange text-black text-button w-full py-3"
+                                                href="{{ route('user.login') }}">Get Started</a></div>
                                     </div>
-                                    <div class="text-center text-white mt-3">Billed annually.</div>
-                                    <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">20,000+ of PNG & SVG graphics</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Access to 100 million stock images</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Upload custom icons and fonts</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Unlimited Sharing</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Upload graphics & video in up to 4k</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Unlimited Projects</div>
-                                        </div>
-                                    </div>
-                                    <div class="button-block w-full mt-6"><a
-                                            class="button-main text-center block hover:text-white hover:bg-orange bg-white border border-orange text-black text-button w-full py-3"
-                                            href="/pages/pricing">Get Started</a></div>
                                 </div>
-                            </div>
-                            <div class="w-full lg:w-1/3">
-                                <div
-                                    class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow duration-500">
-                                    <div class="heading7 text-orange text-center">Premium</div>
-                                    <div class="price text-center justify-center flex items-end gap-2 mt-3">
-                                        <div class="heading2">$60</div>
-                                        <div class="body3">/month</div>
-                                    </div>
-                                    <div class="text-center text-white mt-3">Billed annually.</div>
-                                    <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">20,000+ of PNG & SVG graphics</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Access to 100 million stock images</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Upload custom icons and fonts</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Unlimited Sharing</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Upload graphics & video in up to 4k</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-secondary text-3xl">
-                                                <path
-                                                    d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3 text-secondary">Unlimited Projects</div>
-                                        </div>
-                                    </div>
-                                    <div class="button-block w-full mt-6"><a
-                                            class="button-main text-center block hover-button-black hover:text-white hover:bg-orange bg-white border border-orange text-black text-button w-full py-3"
-                                            href="/pages/pricing">Get Started</a></div>
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-1/3">
-                                <div
-                                    class="pricing-item border border-secondary py-9 px-6 rounded-xl box-shadow duration-500">
-                                    <div class="heading7 text-orange text-center">Enterprise</div>
-                                    <div class="price text-center justify-center flex items-end gap-2 mt-3">
-                                        <div class="heading2">$90</div>
-                                        <div class="body3">/month</div>
-                                    </div>
-                                    <div class="text-center text-white mt-3">Billed annually.</div>
-                                    <div class="list-feature md:mt-10 mt-6 flex flex-col gap-3">
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">20,000+ of PNG & SVG graphics</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Access to 100 million stock images</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Upload custom icons and fonts</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Unlimited Sharing</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Upload graphics & video in up to 4k</div>
-                                        </div>
-                                        <div class="item flex items-center gap-4"> <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"
-                                                class="text-orange text-3xl">
-                                                <path
-                                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z">
-                                                </path>
-                                            </svg>
-                                            <div class="body3">Unlimited Projects</div>
-                                        </div>
-                                    </div>
-                                    <div class="button-block w-full mt-6"><a
-                                            class="button-main text-center block hover:text-white hover:bg-orange bg-white border border-orange text-black text-button w-full py-3"
-                                            href="/pages/pricing">Get Started</a></div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
