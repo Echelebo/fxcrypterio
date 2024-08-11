@@ -629,29 +629,24 @@
 
     <script>
         function openNav() {
-            document.getElementById("menu-mobile-block").classList.toggle("open");
+            document.getElementById("menu-mobile-block").classList.toggle("open")
         }
 
         function closeNav() {
-            document.getElementById("menu-mobile-block").classList.toggle("open");
-        }
-
-        function openVideo() {
-            document.querySelector(".modal-video-main").classList.toggle("open");
+            document.getElementById("menu-mobile-block").classList.toggle("open")
         }
     </script>
     <script>
-        document.addEventListener('click', function(event) {
-            var popup = document.querySelector(".modal-video-main"); // the popup div
-            var target = event.target; // the clicked element
+        const modalBtn = document.querySelector('.modal-video-main')
 
-            if (popup.classList.contains("open")) {
-                // The div has the class 'open'
+        function openVideo() {
+            modalBtn.classList.toggle('open')
+        }
 
-                // Check if the clicked element is outside the popup
-                if (!popup.contains(target)) {
-                    popup.classList.toggle("open"); // change the class
-                }
+        document.addEventListener('click', e => () {
+
+            if (!modalBtn.contains(e.target)) {
+                modalBtn.classList.remove('open')
 
             }
 
