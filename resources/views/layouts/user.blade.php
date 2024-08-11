@@ -101,7 +101,7 @@
                         <img src="" alt="" class="h-6 mx-auto">
                     </span>
                     <span class="group-data-[sidebar-size=sm]:hidden">
-                        <img src="/assts/images/logo-dark.png" alt="" class="h-6 mx-auto">
+                        <img src="{{ asset('assets/images/' . site('logo_rec')) }}" alt="" class="h-6 mx-auto">
                     </span>
                 </a>
                 <a href="/"
@@ -110,7 +110,7 @@
                         <img src="/assts/images/loader.png" alt="" class="h-6 mx-auto">
                     </span>
                     <span class="group-data-[sidebar-size=sm]:hidden">
-                        <img src="/assts/images/logo-light.png" alt="" class="h-6 mx-auto">
+                        <img src="{{ asset('assets/images/' . site('logo_rec')) }}" alt="" class="h-6 mx-auto">
                     </span>
                 </a>
                 <button type="button" class="hidden p-0 float-end" id="vertical-hover">
