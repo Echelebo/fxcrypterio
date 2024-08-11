@@ -642,15 +642,6 @@
         function openVideo() {
             modalBtn.classList.toggle('open')
         }
-
-        document.addEventListener('click', e => () {
-
-            if (!modalBtn.contains(e.target)) {
-                modalBtn.classList.remove('open')
-
-            }
-
-        });
     </script>
 
 
