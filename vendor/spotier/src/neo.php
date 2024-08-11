@@ -1,18 +1,15 @@
 <?php
 
-use App\Mail\WelcomeMail;
 use App\Models\Admin;
 use App\Models\CronJob;
 use App\Models\Deposit;
 use App\Models\Setting;
 use App\Models\Transaction;
 use App\Models\User;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-
 
 //endpoint for api calls
 function endpoint($url)
@@ -27,9 +24,9 @@ function user($user_id = null)
 {
 
     if (!$user_id) {
-        $id  = session()->get('user');
+        $id = session()->get('user');
     } else {
-        $id  = $user_id;
+        $id = $user_id;
     }
 
     if ($id) {
@@ -40,14 +37,11 @@ function user($user_id = null)
     return false;
 }
 
-
 //return admin information
 function admin()
 {
 
-
-    $id  = session()->get('admin');
-
+    $id = session()->get('admin');
 
     if ($id) {
         $admin = Admin::getCachedAdmin($id);
@@ -57,7 +51,7 @@ function admin()
     return false;
 }
 
-//generate otp 
+//generate otp
 function generateOTP($email, $admin = false)
 {
 
@@ -72,7 +66,7 @@ function generateOTP($email, $admin = false)
     $otp = [
         'code' => $code,
         'expires' => strtotime(now()->addMinutes(15)),
-        'email' => $email
+        'email' => $email,
     ];
 
     if ($admin) {
@@ -83,11 +77,9 @@ function generateOTP($email, $admin = false)
     return $otp;
 }
 
-
 //validate otp
-function validateOtp($code, $email,  $admin = false)
+function validateOtp($code, $email, $admin = false)
 {
-
 
     if ($admin) {
         $stored_otp = session()->get('admin-otp');
@@ -99,7 +91,6 @@ function validateOtp($code, $email,  $admin = false)
         return false;
     }
 
-
     if ($stored_otp['code'] !== $code || $stored_otp['expires'] < time() || $stored_otp['email'] !== $email) {
         return false;
     }
@@ -109,12 +100,9 @@ function validateOtp($code, $email,  $admin = false)
     return true;
 }
 
-
-
 //update env
 function updateEnvValue($key, $newValue)
 {
-
 
     $envFile = base_path('.env');
     if (filter_var($newValue, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE) !== null) {
@@ -137,12 +125,9 @@ function updateEnvValue($key, $newValue)
     return true;
 }
 
-
 //retrive setting
 function site($key)
 {
-
-
 
     $site = app('site');
     return $site->get($key)->value ?? null;
@@ -151,7 +136,6 @@ function site($key)
 //update setting
 function updateSite(array $settings)
 {
-
 
     Setting::updateSettings($settings);
 }
@@ -172,8 +156,8 @@ function domain()
 
     // If no subdomain was found or it is just the domain, return the original string as the domain
     return $subdomain;
-}
 
+}
 
 //retrieve public key
 function getKeys()
@@ -200,16 +184,15 @@ function updateDeposit($amount)
     return true;
 }
 
-//validation error 
+//validation error
 function validationError($message)
 {
-
 
     return [
         'message' => $message,
         'errors' => [
             'error' => [
-                $message
+                $message,
             ],
         ],
     ];
@@ -250,7 +233,6 @@ if (!function_exists('uploadImage')) {
     }
 }
 
-
 //protect middleware
 function consolidateSecurity()
 {
@@ -258,19 +240,13 @@ function consolidateSecurity()
     return true;
 }
 
-
 // initiate deposit
 function initiateDeposit($amount, $currency, $processor)
 {
 
-
     $public_key = getKeys();
-    $base_currency  = strtolower(site('currency'));
+    $base_currency = strtolower(site('currency'));
     $converted_amount = convertFiatToCrypto($base_currency, $currency, $amount);
-
-
-
-
 
     if ($processor == 'nowpayment') {
         $url = 'deposits/nowpayment';
@@ -288,7 +264,6 @@ function initiateDeposit($amount, $currency, $processor)
         $url = 'deposits/coinpayment';
         $url = endpoint($url);
 
-
         $data = [
             'public_key' => env('COINPAYMENT_PUBLIC_KEY'),
             'private_key' => env('COINPAYMENT_PRIVATE_KEY'),
@@ -297,17 +272,13 @@ function initiateDeposit($amount, $currency, $processor)
             'currency' => $currency,
             'callback' => route('payment-callback-coinpayment'), //chnage for coinpayment
             'converted_amount' => $converted_amount,
-            'email' => site('email')
+            'email' => site('email'),
         ];
     } else {
         return false;
     }
 
-
-
     $response = Http::post($url, $data);
-
-
 
     // dd($response->body());
 
@@ -317,17 +288,11 @@ function initiateDeposit($amount, $currency, $processor)
 
     $real_order = $response->body();
 
-
-
-    return  $real_order;
+    return $real_order;
 }
-
-
-
 
 function depositCallback()
 {
-
 
     $ipn_secret = env('NP_SECRET_KEY');
 
@@ -382,17 +347,14 @@ function depositCallback()
             return false;
         }
 
-
         return false;
     } else {
         return false;
     }
 }
 
-
 function depositCallbackCoinpayment()
 {
-
 
     $cp_merchant_id = env('COINPAYMENT_MARCHANT_ID');
     $cp_ipn_secret = env('COINPAYMENT_IPN_SECRET');
@@ -401,8 +363,6 @@ function depositCallbackCoinpayment()
         Log::error(json_encode(['IPN Mode is not HMAC', request()->all()]));
         return;
     }
-
-    
 
     $hmacHeader = request()->header('HMAC') ?? request()->header('hmac') ?? request()->header('HTTP_HMAC');
     if (empty($hmacHeader)) {
@@ -433,7 +393,7 @@ function depositCallbackCoinpayment()
     $in_status = intval(request()->status);
     if ($in_status == -2) {
         $status = 'rejected';
-    } 
+    }
 
     switch ($in_status) {
         case -2:
@@ -449,22 +409,22 @@ function depositCallbackCoinpayment()
         case 1:
             $status = 'confirming';
             break;
-        case 2: 
+        case 2:
             $status = 'finished';
             break;
-        case 3: 
+        case 3:
             $status = 'confirming';
             break;
         case 100:
-            $status = 'finished'; 
-            break;       
+            $status = 'finished';
+            break;
         default:
             $status = 'rejected';
             break;
     }
 
     if ($ipn_type != 'api') {
-        Log::error('Invalid Ipn type '  . $ipn_type);
+        Log::error('Invalid Ipn type ' . $ipn_type);
         return;
     }
 
@@ -500,15 +460,12 @@ function depositCallbackCoinpayment()
     return false;
 }
 
-
-
 //record new transaction
 function recordNewTransaction($amount, $user_id, $type, $description)
 {
 
-
     $transaction = new Transaction();
-    $transaction->user_id  = $user_id;
+    $transaction->user_id = $user_id;
     $transaction->amount = $amount;
     $transaction->type = $type;
     $transaction->ref = uniqid('trx-');
@@ -522,7 +479,6 @@ function recordNewTransaction($amount, $user_id, $type, $description)
 function countries()
 {
 
-
     $path = resource_path('json/countries.json');
     $countries_json = file_get_contents($path);
     $countries = json_decode($countries_json);
@@ -534,7 +490,6 @@ function countries()
 function currencies()
 {
 
-
     $path = resource_path('json/currencies.json');
     $currencies_json = file_get_contents($path);
     $currencies = json_decode($currencies_json);
@@ -542,11 +497,9 @@ function currencies()
     return $currencies;
 }
 
-
 //format amount
 function formatAmount($amount, $currency = null, $use_sign = null, $position = null)
 {
-
 
     $currency = $currency ?? site('currency');
     $use_sign = $use_sign ?? site('use_sign');
@@ -572,15 +525,11 @@ function formatAmount($amount, $currency = null, $use_sign = null, $position = n
             $symbol = $selected->code;
         }
 
-
         return strtoupper($position === 'left' ? $symbol . $formattedAmount : $formattedAmount . $symbol);
     }
 
     return strtoupper($code . number_format($amount, 2));
 }
-
-
-
 
 //check for required input field
 
@@ -596,19 +545,16 @@ function is_required($field, $star = true)
     }
 }
 
-
 //convert currency
-function convertFiatToCrypto($fiat, $crypto,  $amount)
+function convertFiatToCrypto($fiat, $crypto, $amount)
 {
-
-
 
     // fetch conversion from api
     $url = endpoint('convert');
     $query = [
         'base' => $fiat,
         'currency' => $crypto,
-        'amount' => $amount
+        'amount' => $amount,
     ];
 
     $response = Http::withHeader('X-DOMAIN', domain())->get($url, $query);
@@ -621,11 +567,9 @@ function convertFiatToCrypto($fiat, $crypto,  $amount)
     return $converted_amount;
 }
 
-
 // process deposit
 function processDeposit($id, $action)
 {
-
 
     $deposit = Deposit::find($id);
     if (!$deposit) {
@@ -642,9 +586,6 @@ function processDeposit($id, $action)
 
             //credit the the user
             $user = User::where('id', $user_id)->first();
-            $credit = User::find($user_id);
-            $credit->balance = $user->balance + $deposit->amount;
-            $credit->save();
 
             //recored new transaction
             $description = "new $deposit->currency deposit";
@@ -654,7 +595,6 @@ function processDeposit($id, $action)
 
             //credit the referrer
             $user->giveReferralBonus($deposit->amount);
-
 
             return true;
         }
@@ -680,7 +620,7 @@ function checkFolderPermission($folder)
     $resp = [
         'folder' => $folder,
         'status' => $response,
-        'perm' => $perm
+        'perm' => $perm,
     ];
     return $resp;
 }
@@ -724,12 +664,11 @@ function formatTimestamp($timestamp)
     }
 }
 
-
 // demo mask
 function demoMask($string)
 {
     if (env('DEMO_MODE')) {
-        return  Str::mask($string, '*', 3);
+        return Str::mask($string, '*', 3);
     } else {
         return $string;
     }
